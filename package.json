@@ -1,0 +1,12 @@
+{
+  "name": "grosby-group",
+  "version": "1.0.0",
+  "description": "Grosby Group — Latin America's leading image agency",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

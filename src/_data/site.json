@@ -1,0 +1,15 @@
+{
+  "name": "Grosby Group",
+  "title": "Grosby Group — Latin America's Leading Image Agency",
+  "description": "The go-to image agency for Latin America and the US Hispanic market. 30 years licensing the world's best photography to publishers, broadcasters, and brands.",
+  "url": "https://grosbygroup.com",
+  "logo": "/assets/Grosby-Group---Logo-Horizontal.png",
+  "logoWhite": "/assets/Grosby-Group-White-Logo-Horizontal.png",
+  "logoRound": "/assets/Grosby_Group_-_Logo_Redondo.png",
+  "accountUrl": "#open-account",
+  "archiveUrl": "https://archive.grosbygroup.com/login",
+  "social": {
+    "facebook": "https://www.facebook.com/grosbygroup/",
+    "instagram": "https://www.instagram.com/grosbygroup/"
+  }
+}
