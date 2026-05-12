@@ -1,16 +1,200 @@
 ---
 layout: layouts/base.njk
 title: "For Publishers — Grosby Group"
-description: "Latin American and US Hispanic publishers: get direct access to the world's most sought-after editorial content, cleared and licensed through Grosby Group."
+seo_title: "For Publishers — Grosby Group | Editorial Images for Latin America"
+seo_description: "Access millions of editorial images — celebrity, sports, fashion, breaking news — cleared and licensed for Latin American and US Hispanic publishers. Open an account today."
 permalink: /publishers/
+lang: en
+faq:
+  - question: "How do I get access to Grosby Group's image library?"
+    answer: "Open a licensed account by clicking Get Access. Our team will review your request and set you up with credentials to browse and license content. Most accounts are activated within one business day."
+  - question: "What content categories are available?"
+    answer: "Celebrity, entertainment, sports, fashion and street style, travel, food and recipes, editorial news, and exclusive archival content. We represent more than 21 of the world's leading photo agencies, giving you access to tens of millions of images across every editorial category."
+  - question: "How are images licensed?"
+    answer: "All images are licensed for editorial use in print and digital publications. Licenses are issued on a per-use basis. Our team can also arrange exclusive territory licenses for high-demand content — contact us to discuss your needs."
+  - question: "Can I get content for the US Hispanic market as well as Latin America?"
+    answer: "Yes. Grosby Group covers both Latin America and the US Hispanic market. Our licensing agreements are structured to include both territories, so you don't need to negotiate separately for each."
+  - question: "How quickly can I get images for a breaking story?"
+    answer: "Our team monitors breaking news around the clock. For urgent editorial needs, contact us directly and we will prioritize your request. Established account holders can download images immediately from the archive platform."
+  - question: "What file formats and resolutions are available?"
+    answer: "Images are delivered as high-resolution JPEG files, suitable for both print and digital use. Most images are available at publication quality (300 dpi or greater). Contact your account manager if you have specific technical requirements."
 ---
 
-<section style="min-height: 100vh; display: flex; align-items: center; background: var(--color-surface-ink); margin-top: 72px;">
-  <div class="container" style="text-align: center;">
-    <p class="section-label">Grosby Group</p>
-    <h1 style="font-family: var(--font-display); font-size: var(--text-h1); color: var(--color-text-inverse); margin-bottom: 1rem;">FOR PUBLISHERS</h1>
-    <p style="color: var(--color-text-inverse-muted);">Full content coming soon.</p>
-    <a href="{{ site.accountUrl }}" class="btn-primary" style="margin-top: 2rem;">Open an account</a>
-    <a href="/" class="btn-ghost" style="margin-top: 2rem; margin-left: 1rem;">← Back to home</a>
+<!-- ─────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    {% image images.hero.publishers, "Copa América football match — editorial sports photography", "100vw", "eager" %}
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__eyebrow">For Publishers &amp; Media Buyers</p>
+    <h1 class="page-hero__headline">THE CONTENT YOUR AUDIENCE DEMANDS. LICENSED AND READY.</h1>
+    <p class="page-hero__body">From breaking celebrity news to archival sports photography, Grosby Group gives Latin American and US Hispanic publishers direct access to the world's most sought-after visual content — cleared, licensed, and delivered on deadline.</p>
+    <div class="page-hero__ctas">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
+      <a href="/contact/" class="btn-ghost">Talk to our team →</a>
+    </div>
   </div>
 </section>
+
+<!-- ─────────────────────────────────────────
+     STATS STRIP
+     ───────────────────────────────────────── -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">30</span>
+        <span class="stat-label">Years of Experience</span>
+        <p class="stat-desc">Three decades as Latin America's go-to editorial image agency</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">21+</span>
+        <span class="stat-label">Partner Agencies</span>
+        <p class="stat-desc">The world's leading photo agencies — AFP, Mega, Splash, and more</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">150+</span>
+        <span class="stat-label">Publisher Clients</span>
+        <p class="stat-desc">Latin America's most influential magazines, newspapers, and digital media</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     WHAT YOU GET
+     ───────────────────────────────────────── -->
+<section class="feature-section">
+  <div class="container">
+    <div class="section-label">What Publishers Get</div>
+    <h2>EVERY IMAGE. EVERY STORY. EVERY DEADLINE.</h2>
+    <div class="feature-grid">
+      <div class="feature-card fade-up">
+        <h4>Celebrity &amp; Entertainment</h4>
+        <p>Red carpet, candid, exclusive — the most comprehensive celebrity image library for the Latin American market. Updated daily, including US Hispanic and international stars.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Sports Photography</h4>
+        <p>Copa América, FIFA World Cup, Formula One, tennis Grand Slams — complete editorial coverage of every major sporting event, with a focus on the sports that matter to Latin American audiences.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Fashion &amp; Street Style</h4>
+        <p>Paris, Milan, New York, London — the full fashion calendar covered by the world's best fashion photographers. Plus Latin American street style and regional trends.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Breaking News</h4>
+        <p>AFP and our partner wire agencies deliver real-time editorial coverage of global and regional breaking news. Our team monitors around the clock and can prioritize urgent requests.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Travel &amp; Lifestyle</h4>
+        <p>Destination photography, food and recipe images, travel portraiture — high-quality lifestyle content for magazines, supplements, and digital platforms.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Exclusive Archive</h4>
+        <p>Thirty years of Latin American visual culture, available exclusively through Grosby Group. Thousands of images from the region's defining moments — only available here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CONTENT CATEGORIES (mini links)
+     ───────────────────────────────────────── -->
+<section class="about-band" style="padding: var(--space-7) 0;">
+  <div class="container--narrow">
+    <div class="section-label">Explore the Library</div>
+    <h2>BROWSE BY CATEGORY</h2>
+    <p>Access our full content library and license images directly from the platform.</p>
+    <div style="display:flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; margin-top: var(--space-5);">
+      <a href="/content/celebrity/" class="btn-ghost">Celebrity</a>
+      <a href="/content/sports/" class="btn-ghost">Sports</a>
+      <a href="/content/archive/" class="btn-ghost">Archive</a>
+      <a href="/content/" class="btn-ghost">All Categories →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     HOW IT WORKS
+     ───────────────────────────────────────── -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-label section-label--blue">Getting Started</div>
+    <h2>UP AND RUNNING IN HOURS</h2>
+    <div class="process-grid">
+      <div class="process-step fade-up">
+        <h4>OPEN AN ACCOUNT</h4>
+        <p>Click Get Access and submit your details. Our team reviews publisher applications and activates accounts within one business day. No credit card required to apply.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h4>BROWSE &amp; SEARCH</h4>
+        <p>Log in to the platform and search across tens of millions of images by keyword, date, photographer, or agency. Download comps immediately for editorial review.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h4>LICENSE &amp; PUBLISH</h4>
+        <p>License the images you need with a single click. High-resolution files are delivered instantly. Our team is available to assist with bulk licensing, exclusives, or urgent requests.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     FAQ
+     ───────────────────────────────────────── -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-label">Common Questions</div>
+    <h2>PUBLISHER FAQ</h2>
+    <div class="faq-list">
+      {% for item in faq %}
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">{{ item.question }}</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>{{ item.answer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CTA BAND
+     ───────────────────────────────────────── -->
+<section class="cta-band">
+  <div class="container--narrow">
+    <p class="cta-band__eyebrow">Ready to start?</p>
+    <h2>GET ACCESS TO THE LIBRARY</h2>
+    <p>Join Latin America's leading publishers and open your account today. Setup takes minutes — you'll be licensing content before end of day.</p>
+    <div class="cta-band__actions">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
+      <a href="/contact/" class="btn-ghost">Talk to our team →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(function(el) {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    // Toggle clicked
+    if (!isOpen) {
+      item.classList.add('open');
+      this.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</script>
