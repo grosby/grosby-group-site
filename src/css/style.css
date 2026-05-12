@@ -758,6 +758,116 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 480px) { .footer-cols { grid-template-columns: 1fr; } }
 
+/* ── CONTACT PAGE ──────────────────────── */
+.contact-section {
+  background: var(--color-surface-paper);
+  padding: var(--space-8) 0;
+}
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-8);
+  align-items: start;
+}
+.contact-form-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  line-height: var(--text-h2-lh);
+  margin-bottom: var(--space-6);
+}
+.contact-form { display: flex; flex-direction: column; gap: var(--space-4); }
+.form-row { display: flex; flex-direction: column; gap: var(--space-2); }
+.form-row--split { flex-direction: row; gap: var(--space-3); }
+.form-row--split .form-field { flex: 1; }
+.form-row--action { flex-direction: row; align-items: center; gap: var(--space-4); flex-wrap: wrap; }
+.form-field { display: flex; flex-direction: column; gap: 8px; }
+.form-field label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+.form-field label span { color: var(--color-brand-red); }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-text-primary);
+  background: #fff;
+  border: 1.5px solid var(--color-border-light);
+  border-radius: 0;
+  padding: 12px 14px;
+  transition: border-color 0.2s;
+  width: 100%;
+  appearance: none;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--color-brand-blue);
+}
+.form-field textarea { resize: vertical; min-height: 120px; }
+.form-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236D6D6D' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+.form-note { font-size: var(--text-caption); color: var(--color-text-muted); }
+.form-success, .form-error { padding: var(--space-3) var(--space-4); font-size: var(--text-body-sm); }
+.form-success { background: #e8f5e9; color: #2e7d32; }
+.form-error   { background: #fdecea; color: #c62828; }
+.form-error a { color: inherit; text-decoration: underline; }
+
+/* Contact sidebar */
+.contact-sidebar { display: flex; flex-direction: column; gap: var(--space-6); }
+.contact-detail-label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-brand-red);
+  margin-bottom: var(--space-2);
+}
+.contact-detail-value { font-size: var(--text-body-sm); color: var(--color-text-secondary); line-height: 1.5; }
+.contact-detail a.contact-detail-value { color: var(--color-brand-blue); }
+.contact-detail a.contact-detail-value:hover { text-decoration: underline; }
+.contact-social { display: flex; gap: var(--space-3); margin-top: var(--space-2); }
+.contact-social a { font-size: var(--text-body-sm); color: var(--color-brand-blue); }
+.contact-social a:hover { text-decoration: underline; }
+
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-sidebar { order: -1; }
+  .form-row--split { flex-direction: column; }
+}
+
+/* ── 404 PAGE ──────────────────────────── */
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-ink);
+  padding: var(--space-9) var(--gutter) var(--space-8);
+  text-align: center;
+}
+.error-page__content { max-width: 640px; }
+.error-page__headline {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  line-height: var(--text-h1-lh);
+  color: var(--color-text-inverse);
+  margin: var(--space-3) 0 var(--space-4);
+}
+.error-page__body {
+  font-size: var(--text-body-lg);
+  color: var(--color-text-inverse-muted);
+  line-height: var(--text-body-lh);
+  margin-bottom: var(--space-6);
+}
+.error-page__links { display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap; }
+
 /* ── ANIMATIONS ─────────────────────────── */
 @media (prefers-reduced-motion: no-preference) {
   .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }

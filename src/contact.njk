@@ -1,16 +1,192 @@
 ---
 layout: layouts/base.njk
 title: "Contact — Grosby Group"
-description: "Get in touch with Grosby Group — Latin America's leading image agency."
+seo_title: "Contact Grosby Group — Latin America's Leading Image Agency"
+seo_description: "Get in touch with Grosby Group. Publisher looking for content, photographer seeking representation, or agency exploring a partnership — we want to hear from you."
 permalink: /contact/
+lang: en
 ---
 
-<section style="min-height: 100vh; display: flex; align-items: center; background: var(--color-surface-ink); padding-top: 72px;">
-  <div class="container" style="text-align: center;">
-    <p class="section-label">Grosby Group</p>
-    <h1 style="font-family: var(--font-display); font-size: var(--text-h1); color: var(--color-text-inverse); margin-bottom: 1rem;">CONTACT</h1>
-    <p style="color: var(--color-text-inverse-muted);">Full content coming soon.</p>
-    <a href="mailto:hello@grosbygroup.com" class="btn-primary" style="margin-top: 2rem;">hello@grosbygroup.com</a>
-    <a href="/" class="btn-ghost" style="margin-top: 2rem; margin-left: 1rem;">← Back to home</a>
+<!-- ─────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────── -->
+<section class="page-hero" style="min-height: 45vh;">
+  <div class="page-hero__bg">
+    {% image images.hero.contact, "Editorial photography — Kristen Stewart, professional portrait", "100vw", "eager" %}
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__eyebrow">Get in Touch</p>
+    <h1 class="page-hero__headline">LET'S TALK.</h1>
   </div>
 </section>
+
+<!-- ─────────────────────────────────────────
+     CONTACT SECTION
+     ───────────────────────────────────────── -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <div class="section-label">Send us a message</div>
+        <h2 class="contact-form-heading">TELL US WHAT YOU NEED</h2>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST" novalidate>
+
+          <!-- Hidden subject routing — populated by JS from ?re= param -->
+          <input type="hidden" name="_subject" id="formSubject" value="General enquiry — Grosby Group">
+
+          <div class="form-row form-row--split">
+            <div class="form-field">
+              <label for="name">Full name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+            </div>
+            <div class="form-field">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@publication.com">
+            </div>
+          </div>
+
+          <div class="form-row form-row--split">
+            <div class="form-field">
+              <label for="company">Company / Publication</label>
+              <input type="text" id="company" name="company" autocomplete="organization" placeholder="Organisation name">
+            </div>
+            <div class="form-field">
+              <label for="reason">I am a&hellip; <span aria-hidden="true">*</span></label>
+              <select id="reason" name="reason" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="publisher">Publisher or media buyer</option>
+                <option value="creators">Photographer or creator</option>
+                <option value="agencies">Photo agency</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us what you're working on or what you need&hellip;"></textarea>
+            </div>
+          </div>
+
+          <div class="form-row form-row--action">
+            <button type="submit" class="btn-primary">Send message</button>
+            <p class="form-note">We aim to respond within one business day.</p>
+          </div>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <p>✓ Message sent. We'll be in touch shortly.</p>
+          </div>
+          <div class="form-error" id="formError" hidden>
+            <p>Something went wrong. Please email us directly at <a href="mailto:hello@grosbygroup.com">hello@grosbygroup.com</a>.</p>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="contact-sidebar">
+        <div class="contact-detail">
+          <p class="contact-detail-label">Email</p>
+          <a href="mailto:hello@grosbygroup.com" class="contact-detail-value">hello@grosbygroup.com</a>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label">Publishers &amp; media buyers</p>
+          <p class="contact-detail-value">Open an account and get immediate access to the content library.</p>
+          <a href="{{ site.archiveUrl }}" class="btn-primary" style="margin-top: var(--space-3); display: inline-block;" target="_blank" rel="noopener noreferrer">Get Access</a>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label">Photographers &amp; creators</p>
+          <p class="contact-detail-value">Tell us about your work using the form. Include a link to your portfolio.</p>
+          <a href="/creators/" class="btn-ghost" style="margin-top: var(--space-3); display: inline-block;">About representation →</a>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label">Photo agencies</p>
+          <p class="contact-detail-value">Interested in a Latin American distribution partnership? We'd like to hear from you.</p>
+          <a href="/agencies/" class="btn-ghost" style="margin-top: var(--space-3); display: inline-block;">About partnerships →</a>
+        </div>
+
+        <div class="contact-detail">
+          <p class="contact-detail-label">Follow us</p>
+          <div class="contact-social">
+            <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Grosby Group on Facebook">Facebook</a>
+            <a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Grosby Group on Instagram">Instagram</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<script>
+// Pre-select reason dropdown and update subject from ?re= URL param
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var re = params.get('re');
+  var subjects = {
+    publishers: 'Publisher enquiry — Grosby Group',
+    creators:   'Creator representation enquiry — Grosby Group',
+    agencies:   'Agency partnership enquiry — Grosby Group'
+  };
+  if (re && subjects[re]) {
+    document.getElementById('formSubject').value = subjects[re];
+    var sel = document.getElementById('reason');
+    for (var i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].value === re) {
+        sel.selectedIndex = i;
+        break;
+      }
+    }
+  }
+})();
+
+// Update hidden subject when dropdown changes
+document.getElementById('reason').addEventListener('change', function() {
+  var subjects = {
+    publishers: 'Publisher enquiry — Grosby Group',
+    creators:   'Creator representation enquiry — Grosby Group',
+    agencies:   'Agency partnership enquiry — Grosby Group',
+    other:      'General enquiry — Grosby Group'
+  };
+  var val = this.value;
+  document.getElementById('formSubject').value = subjects[val] || 'General enquiry — Grosby Group';
+});
+
+// Form submission (Formspree AJAX)
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var form = this;
+  var btn  = form.querySelector('[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(res) {
+    if (res.ok) {
+      form.reset();
+      document.getElementById('formSuccess').hidden = false;
+      document.getElementById('formError').hidden   = true;
+    } else {
+      document.getElementById('formError').hidden   = false;
+      document.getElementById('formSuccess').hidden = true;
+    }
+  }).catch(function() {
+    document.getElementById('formError').hidden   = false;
+    document.getElementById('formSuccess').hidden = true;
+  }).finally(function() {
+    btn.disabled = false;
+    btn.textContent = 'Send message';
+  });
+});
+</script>
