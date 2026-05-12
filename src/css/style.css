@@ -253,6 +253,26 @@ a { color: inherit; text-decoration: none; }
   .nav-cta { display: none; }
 }
 
+/* ── ELEVENTY-IMG HELPERS ───────────────── */
+/* Hero background — picture fills the container, img covers it */
+.hero-bg picture { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.hero-bg img     { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+
+/* Category tiles — picture fills the tile */
+.category-tile picture { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.category-tile img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: filter 0.4s ease, transform 0.6s ease;
+}
+.category-tile:hover img { filter: brightness(0.4); transform: scale(1.04); }
+.category-tile-label { z-index: 1; }
+
+/* Split section images */
+.split-section__image picture { display: block; width: 100%; height: 100%; }
+.split-section__image img     { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+
 /* ── HERO ───────────────────────────────── */
 .hero {
   position: relative;
@@ -265,8 +285,6 @@ a { color: inherit; text-decoration: none; }
 .hero-bg {
   position: absolute; inset: 0;
   background: var(--color-surface-ink);
-  background-size: cover;
-  background-position: center;
 }
 .hero-bg::after {
   content: '';

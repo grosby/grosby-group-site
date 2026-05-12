@@ -7,8 +7,8 @@ permalink: /
 
 <!-- SECTION 1: HERO -->
 <section class="hero">
-  <div class="hero-bg" style="background-image: url('/images/uploads/hero-placeholder.jpg');">
-    <!-- Placeholder until client supplies licensed editorial hero image -->
+  <div class="hero-bg">
+    {% image images.hero.homepage, "Latin celebrity performing on stage with fireworks", "100vw", "eager" %}
   </div>
   <div class="hero-content">
     <p class="hero-eyebrow">Latin America's Leading Image Agency</p>
@@ -100,35 +100,35 @@ permalink: /
     <h2 class="categories-heading">EXPLORE THE LIBRARY</h2>
     <div class="categories-grid">
       <a class="category-tile" href="/content/celebrity/">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
+        {% image images.categories.celebrity, "Celebrity photography — red carpet", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 50vw" %}
         <span class="category-tile-label">Celebrity</span>
       </a>
       <a class="category-tile" href="/content/fashion/">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
+        {% image images.categories.fashion, "Fashion and street style photography", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
         <span class="category-tile-label">Fashion</span>
       </a>
       <a class="category-tile" href="/content/sports/">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
+        {% image images.categories.sports, "Sports photography — football Copa América", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
         <span class="category-tile-label">Sports</span>
       </a>
       <a class="category-tile" href="/content/travel/">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
+        {% image images.categories.travel, "Travel photography — Latin America", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
         <span class="category-tile-label">Travel</span>
       </a>
       <a class="category-tile" href="/content/food/">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
+        {% image images.categories.food, "Food and recipe photography", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 50vw" %}
         <span class="category-tile-label">Food & Recipes</span>
       </a>
-      <a class="category-tile" href="/content/social-media/">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
-        <span class="category-tile-label">Social Media</span>
+      <a class="category-tile" href="/content/editorial/">
+        {% image images.categories.editorial, "Editorial and news photography", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
+        <span class="category-tile-label">Editorial & News</span>
       </a>
       <a class="category-tile" href="/services/#production">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
+        {% image images.categories.editorial, "Production services — documentary and broadcast", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
         <span class="category-tile-label">Production</span>
       </a>
       <a class="category-tile" href="/archive/">
-        <div class="category-tile-placeholder"><span>Image coming soon</span></div>
+        {% image images.categories.archive, "Archive — thirty years of editorial history", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
         <span class="category-tile-label">Archive</span>
       </a>
     </div>
