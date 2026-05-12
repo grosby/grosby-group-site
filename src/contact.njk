@@ -59,8 +59,9 @@ lang: en
               <select id="reason" name="reason" required>
                 <option value="" disabled selected>Select one</option>
                 <option value="publisher">Publisher or media buyer</option>
-                <option value="creators">Photographer or creator</option>
+                <option value="creators">Creator or social media</option>
                 <option value="agencies">Photo agency</option>
+                <option value="production">Production or broadcast</option>
                 <option value="other">Other</option>
               </select>
             </div>
@@ -102,9 +103,9 @@ lang: en
         </div>
 
         <div class="contact-detail">
-          <p class="contact-detail-label">Photographers &amp; creators</p>
-          <p class="contact-detail-value">Tell us about your work using the form. Include a link to your portfolio.</p>
-          <a href="/creators/" class="btn-ghost" style="margin-top: var(--space-3); display: inline-block;">About representation →</a>
+          <p class="contact-detail-label">Creators &amp; social media</p>
+          <p class="contact-detail-value">License celebrity and entertainment content for YouTube, Instagram, and TikTok.</p>
+          <a href="/creators/" class="btn-ghost" style="margin-top: var(--space-3); display: inline-block;">For creators →</a>
         </div>
 
         <div class="contact-detail">
@@ -127,14 +128,16 @@ lang: en
 </section>
 
 <script>
-// Pre-select reason dropdown and update subject from ?re= URL param
+// Pre-select reason dropdown and update subject from URL params
+// Handles: ?re=publishers|creators|agencies  and  ?type=production
 (function() {
-  var params = new URLSearchParams(window.location.search);
-  var re = params.get('re');
+  var params   = new URLSearchParams(window.location.search);
+  var re       = params.get('re') || params.get('type');
   var subjects = {
     publishers: 'Publisher enquiry — Grosby Group',
-    creators:   'Creator representation enquiry — Grosby Group',
-    agencies:   'Agency partnership enquiry — Grosby Group'
+    creators:   'Creator / social media enquiry — Grosby Group',
+    agencies:   'Agency partnership enquiry — Grosby Group',
+    production: 'Production & broadcast enquiry — Grosby Group'
   };
   if (re && subjects[re]) {
     document.getElementById('formSubject').value = subjects[re];
@@ -151,9 +154,10 @@ lang: en
 // Update hidden subject when dropdown changes
 document.getElementById('reason').addEventListener('change', function() {
   var subjects = {
-    publishers: 'Publisher enquiry — Grosby Group',
-    creators:   'Creator representation enquiry — Grosby Group',
+    publisher:  'Publisher enquiry — Grosby Group',
+    creators:   'Creator / social media enquiry — Grosby Group',
     agencies:   'Agency partnership enquiry — Grosby Group',
+    production: 'Production & broadcast enquiry — Grosby Group',
     other:      'General enquiry — Grosby Group'
   };
   var val = this.value;
