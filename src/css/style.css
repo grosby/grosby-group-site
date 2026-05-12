@@ -712,7 +712,7 @@ a { color: inherit; text-decoration: none; }
 }
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0;
   margin-bottom: var(--space-6);
 }
@@ -720,12 +720,13 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px var(--space-4);
+  padding: 48px var(--space-6);
 }
 .partner-logo img {
-  max-height: 50px;
-  max-width: 160px;
-  width: auto;
+  max-height: 72px;
+  max-width: 200px;
+  width: 100%;
+  object-fit: contain;
   transition: opacity 0.2s ease;
 }
 .partner-logo:hover img { opacity: 0.75; }
@@ -741,6 +742,7 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 640px) {
   .partners-grid { grid-template-columns: repeat(2, 1fr); }
+  .partner-logo { padding: 36px var(--space-4); }
 }
 
 /* ── PARTNER DIRECTORY PAGE ─────────────── */
