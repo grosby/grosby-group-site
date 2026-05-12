@@ -1,0 +1,144 @@
+---
+layout: layouts/base.njk
+title: "The Archive — Grosby Group | Thirty Years of Latin American Visual Culture"
+seo_title: "The Archive — Grosby Group | Exclusive Latin American Editorial History"
+seo_description: "Thirty years of Latin American visual culture, available exclusively through Grosby Group. Thousands of images from the region's defining moments — only available here."
+permalink: /content/archive/
+lang: en
+faq:
+  - question: "What does the Grosby Group archive contain?"
+    answer: "The archive contains tens of thousands of images built over thirty years of editorial activity in Latin America — celebrity events, political moments, cultural milestones, sports history, and social documentation from across the region. Much of this content exists nowhere else."
+  - question: "Is archive content available for exclusive licensing?"
+    answer: "Yes. Because much of our archive content is exclusive to Grosby Group, we can arrange exclusive territory licenses for publications that want to use historical images as a unique editorial asset. Contact our team to discuss."
+  - question: "How is the archive organized and searchable?"
+    answer: "Archive content is integrated into our main search platform alongside current photography. You can filter by date range, topic, category, or keyword. Our team is also available to assist with research requests for specific historical topics."
+  - question: "Can archive images be used for editorial and commercial purposes?"
+    answer: "Archive images are licensed for editorial use. For commercial or advertising use, contact our team — some archive content can be licensed for non-editorial purposes under separate terms."
+---
+
+<!-- ─────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    {% image images.categories.archive, "Archive photography — vintage black and white portrait", "100vw", "eager" %}
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__eyebrow">Content Library</p>
+    <h1 class="page-hero__headline">THE ARCHIVE</h1>
+    <p class="page-hero__body">Thirty years of Latin American visual culture. Events, people, and moments that defined the region — available exclusively through Grosby Group, and nowhere else.</p>
+    <div class="page-hero__ctas">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Access the archive</a>
+      <a href="/content/" class="btn-ghost">← All categories</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     ARCHIVE STATEMENT
+     ───────────────────────────────────────── -->
+<section class="split-section">
+  <div class="split-section__content">
+    <div class="section-label">About the Archive</div>
+    <h2>THIRTY YEARS OF IMAGES. FOUND NOWHERE ELSE.</h2>
+    <p>When Grosby Group began operations, we did not just license photography — we built an archive. Every event covered, every celebrity photographed, every cultural moment documented was catalogued and preserved.</p>
+    <p>The result is a body of work that represents three decades of Latin American visual culture. Moments from the region's political history. The celebrities who defined eras. The sporting triumphs that brought countries to a standstill. The social and cultural shifts that changed Latin America.</p>
+    <p>This content cannot be found anywhere else. It is available exclusively through Grosby Group — to licensed publishers, editors, and documentary makers who need the historical record.</p>
+    <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Access the archive →</a>
+  </div>
+  <div class="split-section__image">
+    {% image images.hero.content, "Editorial archive — visual history of Latin America", "(max-width: 768px) 100vw, 40vw" %}
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     WHAT'S IN THE ARCHIVE
+     ───────────────────────────────────────── -->
+<section class="feature-section">
+  <div class="container">
+    <div class="section-label">Archive Categories</div>
+    <h2>THREE DECADES ACROSS EVERY CATEGORY</h2>
+    <div class="feature-grid">
+      <div class="feature-card fade-up">
+        <h4>Celebrity &amp; Entertainment</h4>
+        <p>Thirty years of the region's most influential celebrities — their defining moments, career highs, and the events that shaped Latin American popular culture.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Sport &amp; Competition</h4>
+        <p>The Copa América victories, the World Cup heartbreaks, the Olympic medal moments, the champions who became legends. Historical sports photography that puts current events in context.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Politics &amp; Society</h4>
+        <p>Editorial documentation of the political and social changes that have shaped Latin America over three decades — elections, movements, transitions, and the people who drove them.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Culture &amp; Documentary</h4>
+        <p>The everyday life, traditions, and cultural identity of a continent. Documentary photography that goes beyond the headline to capture the texture of Latin American life.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Fashion &amp; Style</h4>
+        <p>Three decades of Latin American fashion — the designers, the models, the events, and the street style movements that have put the region on the global fashion map.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Research &amp; Custom Access</h4>
+        <p>Can't find what you're looking for in the search platform? Our team conducts archive research on request. Tell us the story you're working on and we'll find the historical images to support it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     FAQ
+     ───────────────────────────────────────── -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-label">Common Questions</div>
+    <h2>ARCHIVE FAQ</h2>
+    <div class="faq-list">
+      {% for item in faq %}
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">{{ item.question }}</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>{{ item.answer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CTA BAND
+     ───────────────────────────────────────── -->
+<section class="cta-band">
+  <div class="container--narrow">
+    <p class="cta-band__eyebrow">Access the exclusive archive</p>
+    <h2>THIRTY YEARS. EVERY STORY.</h2>
+    <p>Open a licensed account to access the full Grosby Group archive — tens of thousands of exclusive images from three decades of Latin American editorial history.</p>
+    <div class="cta-band__actions">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Access the archive</a>
+      <a href="/contact/" class="btn-ghost">Research request →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el) {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      this.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</script>

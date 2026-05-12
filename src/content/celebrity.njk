@@ -1,0 +1,127 @@
+---
+layout: layouts/base.njk
+title: "Celebrity Photography — Grosby Group Content Library"
+seo_title: "Celebrity & Entertainment Photography — Grosby Group"
+seo_description: "The most comprehensive celebrity image library for Latin America. Red carpet, candid, exclusive — licensed from the world's leading entertainment agencies. Updated daily."
+permalink: /content/celebrity/
+lang: en
+faq:
+  - question: "What celebrity content is available?"
+    answer: "We cover all major celebrity categories — red carpet events, film premieres, music and entertainment, award shows, fashion week appearances, candid and paparazzi photography, and exclusive editorial portraits. Coverage includes Latin American, US, and international celebrities."
+  - question: "How current is the celebrity photography?"
+    answer: "Our celebrity archive is updated daily. Breaking celebrity news photography is available within hours of an event through our wire agency partners. Established account holders can download immediately."
+  - question: "Do you cover Latin American celebrities specifically?"
+    answer: "Yes. Latin American celebrity and entertainment photography is a core strength of our library. We have dedicated coverage of the region's biggest stars — music, telenovela, sport, film, and social media — as well as coverage of their international activities."
+  - question: "Can I get exclusive content for my publication?"
+    answer: "Exclusive territory licenses are available for selected content. Contact our team to discuss your needs — we can arrange first-day exclusives or territory exclusives depending on what's available and your publication's requirements."
+---
+
+<!-- ─────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    {% image images.categories.celebrity, "Celebrity photography — George and Amal Clooney at Venice Film Festival", "100vw", "eager" %}
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__eyebrow">Content Library</p>
+    <h1 class="page-hero__headline">CELEBRITY &amp; ENTERTAINMENT</h1>
+    <p class="page-hero__body">The most comprehensive celebrity image library for Latin America. Red carpet, candid, and exclusive photography from the world's leading entertainment agencies — updated daily.</p>
+    <div class="page-hero__ctas">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Browse the library</a>
+      <a href="/content/" class="btn-ghost">← All categories</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     COVERAGE OVERVIEW
+     ───────────────────────────────────────── -->
+<section class="feature-section">
+  <div class="container">
+    <div class="section-label">What's Covered</div>
+    <h2>THE FULL CELEBRITY PICTURE</h2>
+    <div class="feature-grid">
+      <div class="feature-card fade-up">
+        <h4>Red Carpet &amp; Events</h4>
+        <p>Every major awards show, film festival, and premiere — from Cannes to the Oscars to the Latin Grammys. Full red carpet coverage from the world's leading entertainment agencies.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Latin American Stars</h4>
+        <p>Dedicated coverage of the region's biggest celebrity names — music, telenovela, film, sport, and social media. The stars your audience follows, wherever they are in the world.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Candid &amp; Paparazzi</h4>
+        <p>Day-to-day celebrity life from Mega, Backgrid, Splash, and the world's leading paparazzi agencies. The images that drive clicks, shares, and magazine covers across Latin America.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Music &amp; Entertainment</h4>
+        <p>Concert photography, backstage access, album launches, festival coverage — from reggaeton and cumbia to global pop. The entertainment images Latin American audiences demand.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>US Hispanic Crossover</h4>
+        <p>Coverage of Latin artists and entertainers in the US market — tours, TV appearances, award ceremonies, and media events. Essential for publishers serving US Hispanic audiences.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Exclusive Portraits</h4>
+        <p>Studio and editorial portraits from Camera Press, Bestimage, and our other portrait agency partners. Distinctive images that stand apart from the wire photography crowd.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     FAQ
+     ───────────────────────────────────────── -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-label">Common Questions</div>
+    <h2>CELEBRITY CONTENT FAQ</h2>
+    <div class="faq-list">
+      {% for item in faq %}
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">{{ item.question }}</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>{{ item.answer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CTA BAND
+     ───────────────────────────────────────── -->
+<section class="cta-band">
+  <div class="container--narrow">
+    <p class="cta-band__eyebrow">Ready to access the library?</p>
+    <h2>LICENSE CELEBRITY CONTENT TODAY</h2>
+    <p>Open an account and start browsing and licensing the world's best celebrity photography for your Latin American or US Hispanic publication.</p>
+    <div class="cta-band__actions">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
+      <a href="/content/" class="btn-ghost">← All categories</a>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el) {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      this.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</script>

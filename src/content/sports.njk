@@ -1,0 +1,127 @@
+---
+layout: layouts/base.njk
+title: "Sports Photography — Grosby Group Content Library"
+seo_title: "Sports Photography — Grosby Group | Copa América, Football & More"
+seo_description: "Complete editorial sports photography for Latin American publishers. Copa América, FIFA World Cup, Formula One, tennis, and more — licensed from AFP and the world's leading sports agencies."
+permalink: /content/sports/
+lang: en
+faq:
+  - question: "What sports are covered?"
+    answer: "We cover all major sports with particular strength in football (Copa América, FIFA World Cup, CONMEBOL competitions, and top European leagues), Formula One, tennis Grand Slams, boxing, basketball, and athletics. Our partner agencies provide comprehensive coverage of both regional and global sporting events."
+  - question: "How quickly is sports photography available after an event?"
+    answer: "Wire agency sports photography — particularly from AFP — is typically available within minutes to hours of an event ending. Our team monitors major sporting events and can notify you when coverage arrives. Established account holders can download immediately."
+  - question: "Do you cover Latin American regional competitions?"
+    answer: "Yes. Copa América, CONMEBOL World Cup qualifiers, the Libertadores, South American athletics and cycling events, and other regional competitions are covered in depth. Latin American sports journalism is a core strength of our library."
+  - question: "Can I get content for specific athletes or teams?"
+    answer: "Our search platform allows you to find content by athlete name, team, competition, or event. Contact our team if you need help locating specific content or want to discuss a subscription that includes priority delivery for particular sports."
+---
+
+<!-- ─────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    {% image images.categories.sports, "Sports photography — Messi Copa América", "100vw", "eager" %}
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__eyebrow">Content Library</p>
+    <h1 class="page-hero__headline">SPORTS PHOTOGRAPHY</h1>
+    <p class="page-hero__body">Copa América. FIFA World Cup. Formula One. The sporting moments that define a continent, covered by AFP and the world's leading sports photography agencies.</p>
+    <div class="page-hero__ctas">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Browse the library</a>
+      <a href="/content/" class="btn-ghost">← All categories</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     COVERAGE OVERVIEW
+     ───────────────────────────────────────── -->
+<section class="feature-section">
+  <div class="container">
+    <div class="section-label">What's Covered</div>
+    <h2>THE SPORTS LATIN AMERICA CARES ABOUT</h2>
+    <div class="feature-grid">
+      <div class="feature-card fade-up">
+        <h4>Football</h4>
+        <p>Copa América, FIFA World Cup, CONMEBOL competitions, Libertadores, and top European leagues. The complete football picture — from local heroes to global superstars like Messi and Neymar.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Formula One</h4>
+        <p>Full Grand Prix coverage from AFP and our motorsport agency partners. Pit lane, podium, and on-track action — with particular focus on Latin American drivers and the Interlagos and Mexico City races.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Tennis</h4>
+        <p>All four Grand Slams plus ATP and WTA tour events featuring Latin American players. Comprehensive coverage of the region's tennis stars including their international campaigns.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Boxing &amp; MMA</h4>
+        <p>World championship bouts, major Latin American fights, and UFC events featuring regional fighters. The combat sports images that drive engagement across Latin American sports media.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Athletics &amp; Olympics</h4>
+        <p>Olympic Games, World Athletics Championships, Pan American Games, and regional athletics events. Every four years and beyond — the complete athletics archive.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Breaking Sports News</h4>
+        <p>Transfer announcements, press conferences, injuries, retirements — the news images that accompany breaking sports stories, available through our AFP wire within hours of each development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     FAQ
+     ───────────────────────────────────────── -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-label">Common Questions</div>
+    <h2>SPORTS CONTENT FAQ</h2>
+    <div class="faq-list">
+      {% for item in faq %}
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">{{ item.question }}</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>{{ item.answer }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CTA BAND
+     ───────────────────────────────────────── -->
+<section class="cta-band">
+  <div class="container--narrow">
+    <p class="cta-band__eyebrow">Ready to access the library?</p>
+    <h2>LICENSE SPORTS CONTENT TODAY</h2>
+    <p>Open an account and start browsing and licensing the world's best sports photography for your Latin American or US Hispanic publication.</p>
+    <div class="cta-band__actions">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
+      <a href="/content/" class="btn-ghost">← All categories</a>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el) {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      this.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</script>

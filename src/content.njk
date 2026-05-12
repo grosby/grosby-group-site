@@ -1,15 +1,102 @@
 ---
 layout: layouts/base.njk
 title: "Content Library — Grosby Group"
-description: "Celebrity, fashion, sports, travel, food, social media — browse Grosby Group's editorial content library licensed for Latin America and the US Hispanic market."
+seo_title: "Content Library — Grosby Group | Editorial Images for Latin America"
+seo_description: "Browse Grosby Group's editorial content library — celebrity, sports, fashion, travel, food, archive and more, licensed for Latin America and the US Hispanic market."
 permalink: /content/
+lang: en
 ---
 
-<section style="min-height: 100vh; display: flex; align-items: center; background: var(--color-surface-ink); margin-top: 72px;">
-  <div class="container" style="text-align: center;">
-    <p class="section-label">Grosby Group</p>
-    <h1 style="font-family: var(--font-display); font-size: var(--text-h1); color: var(--color-text-inverse); margin-bottom: 1rem;">CONTENT LIBRARY</h1>
-    <p style="color: var(--color-text-inverse-muted);">Full content coming soon.</p>
-    <a href="/" class="btn-ghost" style="margin-top: 2rem;">← Back to home</a>
+<!-- ─────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    {% image images.hero.content, "Editorial content — aerial view with colourful umbrellas and artisans", "100vw", "eager" %}
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__eyebrow">Content Library</p>
+    <h1 class="page-hero__headline">EVERY IMAGE.<br>EVERY STORY.</h1>
+    <p class="page-hero__body">Tens of millions of editorial images across every category — celebrity, sports, fashion, travel, food, breaking news, and an exclusive archive of thirty years of Latin American visual culture.</p>
+    <div class="page-hero__ctas">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Browse the library</a>
+      <a href="/publishers/" class="btn-ghost">For publishers →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CATEGORIES GRID
+     ───────────────────────────────────────── -->
+<section class="categories" style="padding-top: var(--space-7);">
+  <div class="container--wide">
+    <div class="section-label" style="padding: 0 var(--gutter); max-width: var(--container-max); margin: 0 auto var(--space-3);">Browse by Category</div>
+    <h2 class="categories-heading">EXPLORE THE LIBRARY</h2>
+    <div class="categories-grid">
+
+      <a class="category-tile" href="/content/celebrity/">
+        {% image images.categories.celebrity, "Celebrity photography — red carpet", "(max-width: 768px) 100vw, 50vw" %}
+        <span class="category-tile-label">Celebrity</span>
+      </a>
+
+      <a class="category-tile" href="/content/fashion/">
+        {% image images.categories.fashion, "Fashion and street style photography", "(max-width: 768px) 50vw, 25vw" %}
+        <span class="category-tile-label">Fashion</span>
+      </a>
+
+      <a class="category-tile" href="/content/sports/">
+        {% image images.categories.sports, "Sports photography — Copa América", "(max-width: 768px) 50vw, 25vw" %}
+        <span class="category-tile-label">Sports</span>
+      </a>
+
+      <a class="category-tile" href="/content/travel/">
+        {% image images.categories.travel, "Travel photography — Latin America", "(max-width: 768px) 100vw, 50vw" %}
+        <span class="category-tile-label">Travel</span>
+      </a>
+
+      <a class="category-tile" href="/content/food/">
+        {% image images.categories.food, "Food and recipe photography", "(max-width: 768px) 50vw, 25vw" %}
+        <span class="category-tile-label">Food &amp; Recipes</span>
+      </a>
+
+      <a class="category-tile" href="/content/editorial/">
+        {% image images.categories.editorial, "Editorial and news photography", "(max-width: 768px) 50vw, 25vw" %}
+        <span class="category-tile-label">Editorial &amp; News</span>
+      </a>
+
+      <a class="category-tile" href="/content/archive/">
+        {% image images.categories.archive, "Archive — thirty years of editorial history", "100vw" %}
+        <span class="category-tile-label">Archive</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     ABOUT THE LIBRARY
+     ───────────────────────────────────────── -->
+<section class="about-band" style="padding: var(--space-8) 0;">
+  <div class="container--narrow">
+    <div class="section-label">About the Library</div>
+    <h2>MORE THAN 21 AGENCIES. ONE ACCESS POINT.</h2>
+    <p>Grosby Group licenses content from more than 21 of the world's leading photography agencies — AFP, Mega, Splash, Shutterstock Editorial, Backgrid, Alamy, and many more. Instead of negotiating separate deals with each agency, publishers in Latin America and the US Hispanic market access everything through a single licensed account with Grosby Group.</p>
+    <a href="/publishers/" class="btn-ghost">For publishers →</a>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CTA BAND
+     ───────────────────────────────────────── -->
+<section class="cta-band">
+  <div class="container--narrow">
+    <p class="cta-band__eyebrow">Ready to access the library?</p>
+    <h2>GET ACCESS TODAY</h2>
+    <p>Open a licensed publisher account and start browsing and licensing content immediately.</p>
+    <div class="cta-band__actions">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
+      <a href="/contact/" class="btn-ghost">Talk to our team →</a>
+    </div>
   </div>
 </section>

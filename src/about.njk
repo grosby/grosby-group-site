@@ -1,15 +1,142 @@
 ---
 layout: layouts/base.njk
-title: "About — Grosby Group"
-description: "Grosby Group has spent 30 years at the center of the story — representing the world's top photography agencies and licensing their content to Latin America's leading publishers."
+title: "About Grosby Group — Latin America's Leading Image Agency"
+seo_title: "About Grosby Group — Thirty Years at the Center of the Story"
+seo_description: "Grosby Group has been Latin America's go-to image agency for thirty years. We represent the world's top photo agencies and license their content to the region's leading publishers, broadcasters, and brands."
 permalink: /about/
+lang: en
 ---
 
-<section style="min-height: 100vh; display: flex; align-items: center; background: var(--color-surface-ink); margin-top: 72px;">
-  <div class="container" style="text-align: center;">
-    <p class="section-label">Grosby Group</p>
-    <h1 style="font-family: var(--font-display); font-size: var(--text-h1); color: var(--color-text-inverse); margin-bottom: 1rem;">ABOUT US</h1>
-    <p style="color: var(--color-text-inverse-muted);">Full content coming soon.</p>
-    <a href="/" class="btn-ghost" style="margin-top: 2rem;">← Back to home</a>
+<!-- ─────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    {% image images.hero.about, "Editorial photography — Latin American icon at a major event", "100vw", "eager" %}
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <p class="page-hero__eyebrow">About Grosby Group</p>
+    <h1 class="page-hero__headline">THIRTY YEARS AT THE CENTER OF THE STORY.</h1>
+    <p class="page-hero__body">The go-to image agency for Latin America and the US Hispanic market. We represent the world's top photography agencies and license their content exclusively to the region's leading publishers, broadcasters, and brands.</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     STATS STRIP
+     ───────────────────────────────────────── -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">30</span>
+        <span class="stat-label">Years in Business</span>
+        <p class="stat-desc">Latin America's longest-established editorial image agency</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">21+</span>
+        <span class="stat-label">Partner Agencies</span>
+        <p class="stat-desc">AFP, Mega, Splash, Shutterstock, Backgrid, and the world's leading photo agencies</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">Countries Covered</span>
+        <p class="stat-desc">Every major market in Latin America plus the US Hispanic market</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     OUR STORY
+     ───────────────────────────────────────── -->
+<section class="split-section">
+  <div class="split-section__content">
+    <div class="section-label">Our Story</div>
+    <h2>BUILT FOR THIS MARKET. BUILT FOR THE LONG TERM.</h2>
+    <p>Grosby Group was built on a single conviction: that Latin American publishers deserved direct access to the world's best photography, without the barriers, delays, and mark-ups that came with going through a global intermediary.</p>
+    <p>We established relationships with the world's leading photo agencies and became their exclusive licensing representatives in Latin America and the US Hispanic market. We negotiated territory deals, built the infrastructure to deliver images on deadline, and earned a reputation for reliability that kept editors coming back — and kept agencies trusting us with their most valuable content.</p>
+    <p>Thirty years later, that model is still what makes us different. We are not a platform. We are not a search engine. We are an agency — with relationships, expertise, and accountability on both sides of every deal.</p>
+  </div>
+  <div class="split-section__image">
+    {% image images.hero.content, "Editorial photography — the archive of Latin American visual culture", "(max-width: 768px) 100vw, 40vw" %}
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     WHAT WE DO
+     ───────────────────────────────────────── -->
+<section class="feature-section">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2>THREE DECADES OF EDITORIAL EXPERTISE</h2>
+    <div class="feature-grid">
+      <div class="feature-card fade-up">
+        <h4>Content Syndication</h4>
+        <p>We license photography from 21+ global partner agencies to 150+ publisher clients across Latin America and the US Hispanic market. Tens of millions of images across every editorial category.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Creator Representation</h4>
+        <p>We represent individual photographers and smaller agencies, handling all licensing, contracts, and royalty collection for the Latin American market so they can focus on their work.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Agency Distribution</h4>
+        <p>For international photo agencies, we are the dedicated Latin American sub-agent — the partner with the relationships, the market knowledge, and the infrastructure to maximize revenue in this territory.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Production Services</h4>
+        <p>We produce original photo and video content for brands and media companies across the region — from concept and casting to delivery. Editorial quality, commercial brief.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>The Archive</h4>
+        <p>Thirty years of Latin American visual culture, available exclusively through Grosby Group. Events, people, and moments that can't be found anywhere else — a resource without parallel in the region.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Editorial Consultation</h4>
+        <p>Our team offers consultation for publishers building visual content strategies for Latin American and US Hispanic audiences. We know what resonates — and what doesn't.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     MISSION BAND
+     ───────────────────────────────────────── -->
+<section class="about-band">
+  <div class="container--narrow">
+    <div class="section-label">Our Approach</div>
+    <h2>RELATIONSHIPS OVER TRANSACTIONS.</h2>
+    <p>We believe the best deals in this business are built on trust — not just contracts. Our publishers know we will deliver on deadline. Our agency partners know we will represent their content fairly and pay on time. Our creators know we will fight for the best terms in every market.</p>
+    <p style="color: rgba(250,250,248,0.65); font-size: var(--text-body); line-height: 1.65; max-width: 600px; margin: 0 auto var(--space-6);">That is the model we have refined over thirty years. It is not the fastest model. It is not the biggest model. But it is the most reliable — and in editorial licensing, reliability is everything.</p>
+    <a href="/contact/" class="btn-ghost">Get in touch →</a>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     PARTNERS CALLOUT
+     ───────────────────────────────────────── -->
+<section class="partners" style="padding: var(--space-7) 0;">
+  <div class="container">
+    <div class="section-label section-label--blue">Who We Work With</div>
+    <h2>THE WORLD'S BEST, IN ONE PLACE</h2>
+    <p class="partners-closing" style="margin-bottom: var(--space-5);">Our partner agencies include AFP, Mega, Splash, Shutterstock Editorial, Alamy, Backgrid, Bestimage, Camera Press, Coleman Rayner, Instar, Sipa, Zuma, and more than a dozen others — the definitive roster of global editorial photography.</p>
+    <div style="text-align: center; margin-top: var(--space-5);">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Access the library →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     CTA BAND
+     ───────────────────────────────────────── -->
+<section class="cta-band">
+  <div class="container--narrow">
+    <p class="cta-band__eyebrow">Work with us</p>
+    <h2>WHEREVER YOU FIT, THERE'S A PLACE FOR YOU.</h2>
+    <p>Publisher looking for content. Photographer looking for representation. Agency looking for a regional partner. We want to hear from you.</p>
+    <div class="cta-band__actions">
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
+      <a href="/contact/" class="btn-ghost">Contact us →</a>
+    </div>
   </div>
 </section>
