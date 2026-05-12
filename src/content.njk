@@ -27,6 +27,18 @@ lang: en
 </section>
 
 <!-- ─────────────────────────────────────────
+     SEARCH GATEWAY
+     ───────────────────────────────────────── -->
+<section class="about-band" style="padding: var(--space-8) 0; background: var(--color-surface-steel);">
+  <div class="container--narrow">
+    <div class="section-label" style="color: var(--color-brand-blue);">Open the Archive</div>
+    <h2>SEARCH OVER 50 MILLION IMAGES</h2>
+    <p style="color: var(--color-text-inverse-muted);">Log in to the Grosby Group archive and search across tens of millions of editorial images by keyword, celebrity name, event, date, or agency. Download comps immediately. License in a single click.</p>
+    <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer" style="margin-top: var(--space-4); display: inline-block;">Open the Archive →</a>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
      CATEGORIES GRID
      ───────────────────────────────────────── -->
 <section class="categories" style="padding-top: var(--space-7);">
@@ -38,36 +50,43 @@ lang: en
       <a class="category-tile" href="/content/celebrity/">
         {% image images.categories.celebrity, "Celebrity photography — red carpet", "(max-width: 768px) 100vw, 50vw" %}
         <span class="category-tile-label">Celebrity</span>
+        <span class="category-tile-desc">Paparazzi, red carpet, events — updated daily</span>
       </a>
 
       <a class="category-tile" href="/content/fashion/">
         {% image images.categories.fashion, "Fashion and street style photography", "(max-width: 768px) 50vw, 25vw" %}
         <span class="category-tile-label">Fashion</span>
+        <span class="category-tile-desc">Runway, street style, editorial</span>
       </a>
 
       <a class="category-tile" href="/content/sports/">
         {% image images.categories.sports, "Sports photography — Copa América", "(max-width: 768px) 50vw, 25vw" %}
         <span class="category-tile-label">Sports</span>
+        <span class="category-tile-desc">Copa América, FIFA, F1, tennis and more</span>
       </a>
 
       <a class="category-tile" href="/content/travel/">
         {% image images.categories.travel, "Travel photography — Latin America", "(max-width: 768px) 100vw, 50vw" %}
         <span class="category-tile-label">Travel</span>
+        <span class="category-tile-desc">Destination, landscape, regional culture</span>
       </a>
 
       <a class="category-tile" href="/content/food/">
         {% image images.categories.food, "Food and recipe photography", "(max-width: 768px) 50vw, 25vw" %}
         <span class="category-tile-label">Food &amp; Recipes</span>
+        <span class="category-tile-desc">Editorial food, recipe, lifestyle</span>
       </a>
 
       <a class="category-tile" href="/content/editorial/">
         {% image images.categories.editorial, "Editorial and news photography", "(max-width: 768px) 50vw, 25vw" %}
         <span class="category-tile-label">Editorial &amp; News</span>
+        <span class="category-tile-desc">Wire news, AFP, breaking stories</span>
       </a>
 
       <a class="category-tile" href="/content/archive/">
         {% image images.categories.archive, "Archive — thirty years of editorial history", "100vw" %}
         <span class="category-tile-label">Archive</span>
+        <span class="category-tile-desc">Thirty years of Latin American visual history — exclusive to Grosby Group</span>
       </a>
 
     </div>
@@ -75,28 +94,55 @@ lang: en
 </section>
 
 <!-- ─────────────────────────────────────────
-     ABOUT THE LIBRARY
+     AGENCY SPOTLIGHT
      ───────────────────────────────────────── -->
-<section class="about-band" style="padding: var(--space-8) 0;">
-  <div class="container--narrow">
-    <div class="section-label">About the Library</div>
-    <h2>MORE THAN 21 AGENCIES. ONE ACCESS POINT.</h2>
-    <p>Grosby Group licenses content from more than 21 of the world's leading photography agencies — AFP, Mega, Splash, Shutterstock Editorial, Backgrid, Alamy, and many more. Instead of negotiating separate deals with each agency, publishers in Latin America and the US Hispanic market access everything through a single licensed account with Grosby Group.</p>
-    <a href="/publishers/" class="btn-ghost">For publishers →</a>
+<section class="feature-section" style="background: var(--color-surface-cream);">
+  <div class="container">
+    <div class="section-label">Agencies We Represent</div>
+    <h2>40+ WORLD-CLASS AGENCIES. ONE ACCESS POINT.</h2>
+    <p style="max-width: 640px; margin: 0 auto var(--space-6); text-align: center; color: var(--color-text-secondary);">Instead of negotiating separate deals with each agency, publishers in Latin America and the US Hispanic market access everything through a single licensed Grosby Group account.</p>
+    <div class="feature-grid">
+      <div class="feature-card fade-up">
+        <h4>AFP</h4>
+        <p>Real-time global wire photography — breaking news, politics, sports, and culture, delivered around the clock from Agence France-Presse's worldwide network of photojournalists.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Mega Agency</h4>
+        <p>The definitive celebrity paparazzi agency. Red carpet, candid, exclusive — Mega delivers the celebrity imagery that drives traffic for Latin American publishers and creators.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Splash by Shutterstock</h4>
+        <p>Premium celebrity and entertainment photography, sourced from events, film sets, and exclusive shoots. One of the world's most trusted names in editorial celebrity content.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <h4>Imago Images</h4>
+        <p>One of Europe's largest image archives — sports, news, celebrity, and entertainment photography across every major territory and event, covering decades of visual history.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: var(--space-6);">
+      <a href="/agencies/" class="btn-ghost">See all agency partners →</a>
+    </div>
   </div>
 </section>
 
 <!-- ─────────────────────────────────────────
-     CTA BAND
+     DUAL CTA SPLIT
      ───────────────────────────────────────── -->
-<section class="cta-band">
-  <div class="container--narrow">
-    <p class="cta-band__eyebrow">Ready to access the library?</p>
-    <h2>GET ACCESS TODAY</h2>
-    <p>Open a licensed publisher account and start browsing and licensing content immediately.</p>
-    <div class="cta-band__actions">
-      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
-      <a href="/contact/" class="btn-ghost">Talk to our team →</a>
+<section class="content-cta-split">
+  <a href="/publishers/" class="content-cta-panel content-cta-panel--dark">
+    <div class="content-cta-panel__inner">
+      <p class="section-label" style="color: var(--color-brand-blue);">For Publishers</p>
+      <h2>LICENSE FOR PRINT &amp; DIGITAL PUBLICATION</h2>
+      <p>Access the full library and license images for editorial use in your print and digital publications. 150+ Latin American publishers trust Grosby Group to deliver content on deadline.</p>
+      <span class="btn-primary" style="margin-top: var(--space-4); display: inline-block;">Publisher access →</span>
     </div>
-  </div>
+  </a>
+  <a href="/creators/" class="content-cta-panel content-cta-panel--light">
+    <div class="content-cta-panel__inner">
+      <p class="section-label">For Creators</p>
+      <h2>LICENSE FOR SOCIAL MEDIA &amp; YOUTUBE</h2>
+      <p>Clear celebrity and entertainment content for YouTube thumbnails, Instagram posts, and TikTok — commercially licensed for your platform and audience.</p>
+      <span class="btn-secondary" style="margin-top: var(--space-4); display: inline-block;">Creator access →</span>
+    </div>
+  </a>
 </section>
