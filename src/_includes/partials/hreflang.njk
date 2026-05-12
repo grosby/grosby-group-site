@@ -1,0 +1,17 @@
+{#
+  hreflang.njk — alternate language link tags
+  Renders for EN, ES (es-419), PT (pt-BR) and x-default.
+  For ES/PT pages, strips the language prefix to derive the base path.
+  Canonical domain is always www.grosbygroup.com.
+#}
+{% if lang == 'es' %}
+  {% set _basePath = page.url | replace('/es/', '/') %}
+{% elif lang == 'pt' %}
+  {% set _basePath = page.url | replace('/pt/', '/') %}
+{% else %}
+  {% set _basePath = page.url %}
+{% endif %}
+<link rel="alternate" hreflang="x-default" href="https://www.grosbygroup.com{{ _basePath }}">
+<link rel="alternate" hreflang="en"         href="https://www.grosbygroup.com{{ _basePath }}">
+<link rel="alternate" hreflang="es-419"     href="https://www.grosbygroup.com/es{{ _basePath }}">
+<link rel="alternate" hreflang="pt-BR"      href="https://www.grosbygroup.com/pt{{ _basePath }}">

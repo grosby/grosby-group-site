@@ -1,0 +1,83 @@
+{
+  "_note": "Spanish (es-419) — scaffolded from EN. Replace all values with translated copy.",
+
+  "nav_content":    "Contenido",
+  "nav_publishers": "Editores",
+  "nav_creators":   "Creadores",
+  "nav_agencies":   "Agencias",
+  "nav_about":      "Nosotros",
+  "nav_get_access": "Obtener acceso",
+
+  "hero_eyebrow":  "La agencia de imágenes líder en América Latina",
+  "hero_headline": "LO TENEMOS.",
+  "hero_subhead":  "El periodismo gráfico es nuestro ADN.",
+  "hero_body":     "Treinta años representando a los mejores fotógrafos del mundo y entregando contenido editorial de primer nivel a los principales editores de América Latina.",
+  "hero_cta_primary": "Obtener acceso",
+  "hero_cta_secondary": "Conoce más",
+
+  "ticker_items": [
+    "CELEBRIDADES",
+    "ENTRETENIMIENTO",
+    "MODA & STREET STYLE",
+    "DEPORTES",
+    "VIAJES",
+    "GASTRONOMÍA",
+    "SERVICIOS DE PRODUCCIÓN",
+    "CONTENIDO DE ARCHIVO",
+    "NOTICIAS DE ÚLTIMA HORA"
+  ],
+
+  "audience_label":       "A quiénes servimos",
+  "audience_heading":     "EL CONTENIDO ADECUADO PARA CADA AUDIENCIA",
+
+  "publishers_label":     "Para Editores",
+  "publishers_heading":   "EL CONTENIDO QUE TU AUDIENCIA EXIGE.",
+  "publishers_body":      "Desde noticias de celebridades hasta fotografía de archivo rarísima, Grosby Group da a los editores latinoamericanos e hispanos de EE.UU. acceso directo al contenido visual más buscado del mundo.",
+  "publishers_cta":       "Obtener acceso →",
+
+  "creators_label":       "Para Creadores",
+  "creators_heading":     "LLEGA A LATINOAMÉRICA. NOSOTROS HACEMOS EL RESTO.",
+  "creators_body":        "Si tu trabajo merece una audiencia latinoamericana, queremos representarte. Treinta años construyendo las relaciones y la infraestructura para licenciar tu contenido.",
+  "creators_cta":         "Conoce la representación →",
+
+  "agencies_label":       "Para Agencias",
+  "agencies_heading":     "TU CONTENIDO. NUESTRO TERRITORIO.",
+  "agencies_body":        "Asóciate con la única agencia que ha pasado tres décadas construyendo relaciones de licenciamiento dedicadas con los principales editores de América Latina.",
+  "agencies_cta":         "Asóciate con nosotros →",
+
+  "partners_label":       "Agencias que representamos",
+  "partners_heading":     "LAS MEJORES AGENCIAS FOTOGRÁFICAS DEL MUNDO",
+  "partners_statement":   "Grosby Group es el socio exclusivo de licenciamiento en América Latina para las principales agencias fotográficas del mundo.",
+
+  "content_label":        "Biblioteca de contenido",
+  "content_heading":      "EXPLORA LA BIBLIOTECA",
+
+  "category_celebrity":   "Celebridades",
+  "category_fashion":     "Moda",
+  "category_sports":      "Deportes",
+  "category_travel":      "Viajes",
+  "category_food":        "Gastronomía",
+  "category_editorial":   "Editorial & Noticias",
+  "category_archive":     "Archivo",
+
+  "about_label":          "Sobre Grosby Group",
+  "about_heading":        "TREINTA AÑOS EN EL CENTRO DE LA HISTORIA",
+  "about_body":           "Grosby Group es la agencia de imágenes de referencia para América Latina y el mercado hispano de EE.UU. Representamos a las principales agencias fotográficas del mundo.",
+  "about_cta":            "Nuestra historia →",
+
+  "footer_tagline":       "La agencia de imágenes de referencia para América Latina y el mercado hispano de EE.UU.",
+  "footer_publishers":    "Para Editores",
+  "footer_creators":      "Para Creadores",
+  "footer_agencies":      "Para Agencias",
+  "footer_company":       "Empresa",
+  "footer_copyright":     "© 2026 Grosby Group Inc. Todos los derechos reservados.",
+
+  "cta_get_access":       "Obtener acceso",
+  "cta_open_account":     "Abrir una cuenta",
+  "cta_learn_more":       "Conoce más",
+  "cta_our_story":        "Nuestra historia",
+  "cta_get_in_touch":     "Contáctanos",
+  "cta_start_project":    "Iniciar proyecto",
+  "cta_explore":          "Explorar contenido",
+  "cta_join_network":     "Únete a la red"
+}

@@ -1,31 +1,40 @@
 ---
 layout: layouts/base.njk
 title: "Grosby Group — Latin America's Leading Image Agency"
-description: "The go-to image agency for Latin America and the US Hispanic market. 30 years licensing the world's best photography to publishers, broadcasters, and brands."
+seo_title: "Grosby Group — Latin America's Leading Image Agency"
+seo_description: "The go-to image agency for Latin America and the US Hispanic market. Thirty years licensing the world's best photography to publishers, broadcasters, and brands."
 permalink: /
+lang: en
 ---
 
-<!-- SECTION 1: HERO -->
+<!-- ─────────────────────────────────────────
+     SECTION 1: HERO
+     ───────────────────────────────────────── -->
 <section class="hero">
   <div class="hero-bg">
-    {% image images.hero.homepage, "Latin celebrity performing on stage with fireworks", "100vw", "eager" %}
+    {% image images.hero.homepage, "Latin celebrity performing on stage with dramatic lighting", "100vw", "eager" %}
   </div>
   <div class="hero-content">
     <p class="hero-eyebrow">Latin America's Leading Image Agency</p>
     <h1 class="hero-headline">WE HAVE IT.</h1>
-    <p class="hero-subhead">Thirty years representing the world's best photographers and delivering editorial content to Latin America's leading publishers.</p>
+    <p class="hero-editorial">Editorial Is Our DNA.</p>
+    <p class="hero-subhead">Thirty years representing the world's best photographers and delivering premium editorial content to Latin America's leading publishers.</p>
     <div class="hero-ctas">
-      <a href="{{ site.accountUrl }}" class="btn-primary">Open an account</a>
-      <a href="/services/" class="btn-ghost">Learn more</a>
+      <a href="{{ site.archiveUrl }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Get Access</a>
+      <a href="/about/" class="btn-ghost">Our story →</a>
     </div>
   </div>
 </section>
 
-<!-- SECTION 2: TICKER -->
+<!-- ─────────────────────────────────────────
+     SECTION 2: TICKER
+     ───────────────────────────────────────── -->
 <section class="ticker" aria-hidden="true">
   <div class="ticker-track">
     <span class="ticker-item">CELEBRITY</span>
     <span class="ticker-item">•</span>
+    <span class="ticker-item">ENTERTAINMENT</span>
+    <span class="ticker-item">•</span>
     <span class="ticker-item">FASHION & STREET STYLE</span>
     <span class="ticker-item">•</span>
     <span class="ticker-item">SPORTS</span>
@@ -34,17 +43,17 @@ permalink: /
     <span class="ticker-item">•</span>
     <span class="ticker-item">FOOD & RECIPES</span>
     <span class="ticker-item">•</span>
-    <span class="ticker-item">SOCIAL MEDIA</span>
-    <span class="ticker-item">•</span>
     <span class="ticker-item">PRODUCTION SERVICES</span>
     <span class="ticker-item">•</span>
     <span class="ticker-item">ARCHIVAL CONTENT</span>
     <span class="ticker-item">•</span>
     <span class="ticker-item">BREAKING NEWS</span>
     <span class="ticker-item">•</span>
-    <!-- Repeat for seamless loop -->
+    <!-- Duplicate for seamless loop -->
     <span class="ticker-item">CELEBRITY</span>
     <span class="ticker-item">•</span>
+    <span class="ticker-item">ENTERTAINMENT</span>
+    <span class="ticker-item">•</span>
     <span class="ticker-item">FASHION & STREET STYLE</span>
     <span class="ticker-item">•</span>
     <span class="ticker-item">SPORTS</span>
@@ -52,8 +61,6 @@ permalink: /
     <span class="ticker-item">TRAVEL</span>
     <span class="ticker-item">•</span>
     <span class="ticker-item">FOOD & RECIPES</span>
-    <span class="ticker-item">•</span>
-    <span class="ticker-item">SOCIAL MEDIA</span>
     <span class="ticker-item">•</span>
     <span class="ticker-item">PRODUCTION SERVICES</span>
     <span class="ticker-item">•</span>
@@ -64,126 +71,217 @@ permalink: /
   </div>
 </section>
 
-<!-- SECTION 3: SERVICES -->
-<section class="services">
-  <div class="container">
-    <div class="section-label section-label--blue">Our Services</div>
-    <div class="services-grid">
-      <a href="/services/#syndication" class="service-card fade-up">
-        <h4>Content Syndication</h4>
-        <p>Access millions of editorial images across every category, licensed for publication in print and digital.</p>
-        <span class="service-card-cta">Explore content →</span>
-      </a>
-      <a href="/photographers/" class="service-card fade-up">
-        <h4>Photographer Representation</h4>
-        <p>We represent and syndicate photographers and agencies worldwide, connecting their work with Latin America's top publishers.</p>
-        <span class="service-card-cta">Join our network →</span>
-      </a>
-      <a href="/services/#production" class="service-card fade-up">
-        <h4>Production Services</h4>
-        <p>From concept to delivery — we produce original photo and video content for brands and media companies across the region.</p>
-        <span class="service-card-cta">Start a project →</span>
-      </a>
-      <a href="/archive/" class="service-card fade-up">
-        <h4>The Archive</h4>
-        <p>Thirty years of Latin American visual culture. Thousands of images available exclusively through Grosby Group.</p>
-        <span class="service-card-cta">Access the archive →</span>
-      </a>
-    </div>
+<!-- ─────────────────────────────────────────
+     SECTION 3: THREE AUDIENCE PATHS
+     ───────────────────────────────────────── -->
+<section class="audience-paths">
+  <div class="audience-paths-intro">
+    <div class="section-label section-label--blue">Who We Serve</div>
+    <h2>THE RIGHT CONTENT<br>FOR EVERY AUDIENCE</h2>
+  </div>
+  <div class="audience-grid">
+
+    <a href="/publishers/" class="audience-card fade-up">
+      <div class="audience-card__bg">
+        {% image images.hero.publishers, "Copa América football match editorial photography", "(max-width: 900px) 100vw, 33vw" %}
+      </div>
+      <div class="audience-card__content">
+        <p class="audience-card__label">For Publishers &amp; Media Buyers</p>
+        <h3>THE CONTENT YOUR AUDIENCE DEMANDS.</h3>
+        <p>From breaking celebrity news to archival sports photography, Grosby Group gives Latin American and US Hispanic publishers direct access to the world's most sought-after visual content — cleared, licensed, and delivered on deadline.</p>
+        <span class="audience-card-cta">Get Access →</span>
+      </div>
+    </a>
+
+    <a href="/creators/" class="audience-card fade-up">
+      <div class="audience-card__bg">
+        {% image images.hero.creators, "Photographer performing on stage with golden stage lights", "(max-width: 900px) 100vw, 33vw" %}
+      </div>
+      <div class="audience-card__content">
+        <p class="audience-card__label">For Photographers &amp; Creators</p>
+        <h3>REACH LATIN AMERICA. WE HANDLE THE REST.</h3>
+        <p>If your work deserves a Latin American audience, we want to represent you. Thirty years building the relationships and infrastructure to license your content across the region's leading media companies.</p>
+        <span class="audience-card-cta">Learn about representation →</span>
+      </div>
+    </a>
+
+    <a href="/agencies/" class="audience-card fade-up">
+      <div class="audience-card__bg">
+        {% image images.hero.agencies, "Portrait photography — global image agency partner", "(max-width: 900px) 100vw, 33vw" %}
+      </div>
+      <div class="audience-card__content">
+        <p class="audience-card__label">For Photo Agencies</p>
+        <h3>YOUR CONTENT. OUR TERRITORY.</h3>
+        <p>Partner with the only agency that has spent three decades building dedicated licensing relationships with Latin America's top publishers. We are the established gateway to this market.</p>
+        <span class="audience-card-cta">Partner with us →</span>
+      </div>
+    </a>
+
   </div>
 </section>
 
-<!-- SECTION 4: CONTENT CATEGORIES -->
+<!-- ─────────────────────────────────────────
+     SECTION 4: PARTNER NETWORK
+     ───────────────────────────────────────── -->
+<section class="partners">
+  <div class="container">
+    <div class="section-label section-label--blue">Agencies We Represent</div>
+    <h2>THE WORLD'S TOP PHOTO AGENCIES</h2>
+
+    <div class="partners-grid">
+      <!-- AFP -->
+      <div class="partner-logo">
+        <img src="/assets/partners/AFP.png" alt="AFP — Agence France-Presse" loading="lazy">
+      </div>
+      <!-- Mega Agency -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Mega.png" alt="Mega Agency" loading="lazy">
+      </div>
+      <!-- Splash News -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Splash.png" alt="Splash News" loading="lazy">
+      </div>
+      <!-- Shutterstock Editorial -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Shutterstock.png" alt="Shutterstock Editorial" loading="lazy">
+      </div>
+      <!-- Alamy -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Alamy.png" alt="Alamy" loading="lazy">
+      </div>
+      <!-- Backgrid -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Backgrid.png" alt="Backgrid" loading="lazy">
+      </div>
+      <!-- BestImage -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Bestimage.png" alt="Bestimage" loading="lazy">
+      </div>
+      <!-- Camera Press -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Camera-Press.png" alt="Camera Press" loading="lazy">
+      </div>
+      <!-- Coleman Rayner -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Coleman-Rayner.png" alt="Coleman Rayner" loading="lazy">
+      </div>
+      <!-- Action Press -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Action-Press.png" alt="Action Press" loading="lazy">
+      </div>
+      <!-- Instar -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Instar.png" alt="Instar Images" loading="lazy">
+      </div>
+      <!-- Living4media -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Living4media.png" alt="Living4media" loading="lazy">
+      </div>
+      <!-- Picture Alliance -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Picture-Alliance.png" alt="Picture Alliance" loading="lazy">
+      </div>
+      <!-- Rex / Shutterstock -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Rex.png" alt="Rex Features" loading="lazy">
+      </div>
+      <!-- Sipa Press -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Sipa.png" alt="Sipa Press" loading="lazy">
+      </div>
+      <!-- StockFood -->
+      <div class="partner-logo">
+        <img src="/assets/partners/StockFood.png" alt="StockFood" loading="lazy">
+      </div>
+      <!-- SWNS -->
+      <div class="partner-logo">
+        <img src="/assets/partners/SWNS.png" alt="SWNS" loading="lazy">
+      </div>
+      <!-- Zuma Press -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Zuma.png" alt="Zuma Press" loading="lazy">
+      </div>
+      <!-- DDP -->
+      <div class="partner-logo">
+        <img src="/assets/partners/DDP.png" alt="DDP Images" loading="lazy">
+      </div>
+      <!-- Gtres Online -->
+      <div class="partner-logo">
+        <img src="/assets/partners/Gtres.png" alt="Gtres Online" loading="lazy">
+      </div>
+      <!-- x17 Online -->
+      <div class="partner-logo">
+        <img src="/assets/partners/x17.png" alt="x17 Online" loading="lazy">
+      </div>
+    </div>
+
+    <p class="partners-closing">Grosby Group is the exclusive Latin American licensing partner for the world's leading photography agencies — connecting global content with the region's most influential publishers, broadcasters, and brands.</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     SECTION 5: CONTENT CATEGORIES
+     ───────────────────────────────────────── -->
 <section class="categories">
   <div class="container--wide">
     <div class="section-label" style="padding: 0 var(--gutter); max-width: var(--container-max); margin: 0 auto var(--space-3);">Content Library</div>
     <h2 class="categories-heading">EXPLORE THE LIBRARY</h2>
     <div class="categories-grid">
+
+      <!-- Tile 1: Celebrity — span 2 -->
       <a class="category-tile" href="/content/celebrity/">
-        {% image images.categories.celebrity, "Celebrity photography — red carpet", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 50vw" %}
+        {% image images.categories.celebrity, "Celebrity photography — red carpet", "(max-width: 768px) 100vw, 50vw" %}
         <span class="category-tile-label">Celebrity</span>
       </a>
+
+      <!-- Tile 2: Fashion -->
       <a class="category-tile" href="/content/fashion/">
-        {% image images.categories.fashion, "Fashion and street style photography", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
+        {% image images.categories.fashion, "Fashion and street style photography", "(max-width: 768px) 50vw, 25vw" %}
         <span class="category-tile-label">Fashion</span>
       </a>
+
+      <!-- Tile 3: Sports -->
       <a class="category-tile" href="/content/sports/">
-        {% image images.categories.sports, "Sports photography — football Copa América", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
+        {% image images.categories.sports, "Sports photography — Copa América", "(max-width: 768px) 50vw, 25vw" %}
         <span class="category-tile-label">Sports</span>
       </a>
+
+      <!-- Tile 4: Travel — span 2 -->
       <a class="category-tile" href="/content/travel/">
-        {% image images.categories.travel, "Travel photography — Latin America", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
+        {% image images.categories.travel, "Travel photography — Latin America", "(max-width: 768px) 100vw, 50vw" %}
         <span class="category-tile-label">Travel</span>
       </a>
+
+      <!-- Tile 5: Food -->
       <a class="category-tile" href="/content/food/">
-        {% image images.categories.food, "Food and recipe photography", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 50vw" %}
-        <span class="category-tile-label">Food & Recipes</span>
+        {% image images.categories.food, "Food and recipe photography", "(max-width: 768px) 50vw, 25vw" %}
+        <span class="category-tile-label">Food &amp; Recipes</span>
       </a>
+
+      <!-- Tile 6: Editorial -->
       <a class="category-tile" href="/content/editorial/">
-        {% image images.categories.editorial, "Editorial and news photography", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
-        <span class="category-tile-label">Editorial & News</span>
+        {% image images.categories.editorial, "Editorial and news photography", "(max-width: 768px) 50vw, 25vw" %}
+        <span class="category-tile-label">Editorial &amp; News</span>
       </a>
-      <a class="category-tile" href="/services/#production">
-        {% image images.categories.editorial, "Production services — documentary and broadcast", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
-        <span class="category-tile-label">Production</span>
-      </a>
-      <a class="category-tile" href="/archive/">
-        {% image images.categories.archive, "Archive — thirty years of editorial history", "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" %}
+
+      <!-- Tile 7: Archive — span 4 full width -->
+      <a class="category-tile" href="/content/archive/">
+        {% image images.categories.archive, "Archive — thirty years of editorial history", "100vw" %}
         <span class="category-tile-label">Archive</span>
       </a>
+
     </div>
   </div>
 </section>
 
-<!-- SECTION 5: ABOUT / CREDIBILITY -->
+<!-- ─────────────────────────────────────────
+     SECTION 6: ABOUT STRIP
+     ───────────────────────────────────────── -->
 <section class="about-band">
   <div class="container--narrow">
     <div class="section-label">About Grosby Group</div>
     <h2>THIRTY YEARS AT THE CENTER OF THE STORY</h2>
     <p>Grosby Group is the go-to image agency for Latin America and the US Hispanic market. We represent the world's top photography agencies, licensing their content exclusively to publishers, broadcasters, and brands across the region.</p>
     <a href="/about/" class="btn-ghost">Our story →</a>
-  </div>
-</section>
-
-<!-- SECTION 6: FOR PUBLISHERS -->
-<section class="split-section">
-  <div class="split-section__content">
-    <div class="section-label">For Publishers & Media Buyers</div>
-    <h2>THE CONTENT YOUR AUDIENCE DEMANDS. LICENSED AND READY.</h2>
-    <p>From breaking celebrity news to archival sports photography, Grosby Group gives Latin American and US Hispanic publishers direct access to the world's most sought-after visual content — cleared, licensed, and delivered on deadline.</p>
-    <a href="{{ site.accountUrl }}" class="btn-primary">Open an account →</a>
-  </div>
-  <div class="split-section__image split-section__image--placeholder">
-    <span>Client to supply image</span>
-  </div>
-</section>
-
-<!-- SECTION 7: FOR PHOTOGRAPHERS -->
-<section class="split-section split-section--reverse split-section--dark">
-  <div class="split-section__image split-section__image--placeholder">
-    <span>Client to supply image</span>
-  </div>
-  <div class="split-section__content">
-    <div class="section-label">For Photographers & Agencies</div>
-    <h2>REACH LATIN AMERICA. WE HANDLE THE REST.</h2>
-    <p>If your work deserves a Latin American audience, we want to represent you. Grosby Group has spent thirty years building the relationships and infrastructure to license your content across the region's leading media companies.</p>
-    <a href="/contact/" class="btn-ghost">Get in touch →</a>
-  </div>
-</section>
-
-<!-- SECTION 8: PARTNER AGENCIES -->
-<section class="partners">
-  <div class="container">
-    <div class="section-label section-label--blue">Agencies We Represent</div>
-    <h2>THE WORLD'S TOP PHOTO AGENCIES</h2>
-    <div class="partners-grid">
-      <!-- Placeholder cards — client to supply logos to /assets/partners/ -->
-      {% for i in range(0, 18) %}
-      <div class="partner-logo partner-logo--placeholder">
-        <span style="font-size: 11px; color: var(--color-text-muted); letter-spacing: 0.05em;">Agency logo</span>
-      </div>
-      {% endfor %}
-    </div>
-    <p class="partners-closing">Grosby Group exclusively licenses content from the world's leading photography agencies to Latin America and the US Hispanic market's most influential publishers, broadcasters, and brands.</p>
   </div>
 </section>
