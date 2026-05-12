@@ -126,96 +126,20 @@ lang: en
 <section class="partners">
   <div class="container">
     <div class="section-label section-label--blue">Agencies We Represent</div>
-    <h2>THE WORLD'S TOP PHOTO AGENCIES</h2>
+    <h2>OUR GLOBAL PARTNER NETWORK</h2>
 
     <div class="partners-grid">
-      <!-- AFP -->
+      {% for partner in partners %}
       <div class="partner-logo">
-        <img src="/assets/partners/AFP.png" alt="AFP — Agence France-Presse" loading="lazy">
+        <img src="/assets/partners/{{ partner.logo }}" alt="{{ partner.name }}" loading="lazy">
       </div>
-      <!-- Mega Agency -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Mega.png" alt="Mega Agency" loading="lazy">
-      </div>
-      <!-- Splash News -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Splash_by_Shutterstock.png" alt="Splash News" loading="lazy">
-      </div>
-      <!-- Shutterstock Editorial -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Shutterstock.png" alt="Shutterstock Editorial" loading="lazy">
-      </div>
-      <!-- Alamy -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Alamy.png" alt="Alamy" loading="lazy">
-      </div>
-      <!-- Backgrid -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Backgrid.png" alt="Backgrid" loading="lazy">
-      </div>
-      <!-- BestImage -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Bestimage.png" alt="Bestimage" loading="lazy">
-      </div>
-      <!-- Camera Press -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Camera-Press.png" alt="Camera Press" loading="lazy">
-      </div>
-      <!-- Coleman Rayner -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Coleman-Rayner.png" alt="Coleman Rayner" loading="lazy">
-      </div>
-      <!-- Action Press -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Action-Press.png" alt="Action Press" loading="lazy">
-      </div>
-      <!-- Instar -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Instar-new.png" alt="Instar Images" loading="lazy">
-      </div>
-      <!-- Living4media -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Living4media.png" alt="Living4media" loading="lazy">
-      </div>
-      <!-- Picture Alliance -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Picture-Alliance.png" alt="Picture Alliance" loading="lazy">
-      </div>
-      <!-- Rex / Shutterstock -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Rex.png" alt="Rex Features" loading="lazy">
-      </div>
-      <!-- Sipa Press -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Sipa.png" alt="Sipa Press" loading="lazy">
-      </div>
-      <!-- StockFood -->
-      <div class="partner-logo">
-        <img src="/assets/partners/StockFood.png" alt="StockFood" loading="lazy">
-      </div>
-      <!-- SWNS -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Swns.png" alt="SWNS" loading="lazy">
-      </div>
-      <!-- Zuma Press -->
-      <div class="partner-logo">
-        <img src="/assets/partners/Zuma.png" alt="Zuma Press" loading="lazy">
-      </div>
-      <!-- DDP -->
-      <div class="partner-logo">
-        <img src="/assets/partners/ddp.png" alt="DDP Images" loading="lazy">
-      </div>
-      <!-- Gtres Online -->
-      <div class="partner-logo">
-        <img src="/assets/partners/gtres_online.png" alt="Gtres Online" loading="lazy">
-      </div>
-      <!-- x17 Online -->
-      <div class="partner-logo">
-        <img src="/assets/partners/x17.png" alt="x17 Online" loading="lazy">
-      </div>
+      {% endfor %}
     </div>
 
     <p class="partners-closing">Grosby Group is the exclusive Latin American licensing partner for the world's leading photography agencies — connecting global content with the region's most influential publishers, broadcasters, and brands.</p>
+    <div class="partners-cta">
+      <a href="/partners/" class="btn-ghost">See all our partners →</a>
+    </div>
   </div>
 </section>
 

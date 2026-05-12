@@ -712,27 +712,144 @@ a { color: inherit; text-decoration: none; }
 }
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: var(--space-4);
-  margin-bottom: var(--space-6);
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  margin-bottom: var(--space-5);
+  border: 0.5px solid var(--color-border-light);
+  overflow: hidden;
 }
 .partner-logo {
-  background: var(--color-surface-cream);
-  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface-paper);
+  border: 0.5px solid var(--color-border-light);
+  padding: var(--space-3) var(--space-3);
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 72px;
-  transition: all 0.2s ease;
+  min-height: 80px;
 }
-.partner-logo img { max-height: 48px; max-width: 140px; width: auto; transition: transform 0.2s ease; }
-.partner-logo:hover img { transform: scale(1.08); }
-.partner-logo--placeholder { background: var(--color-surface-cream); }
+.partner-logo img {
+  max-height: 44px;
+  max-width: 150px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+.partner-logo:hover img { transform: scale(1.06); }
 .partners-closing {
   font-size: var(--text-body);
   color: var(--color-text-muted);
   max-width: var(--container-narrow);
-  margin: 0 auto;
+  margin: 0 auto var(--space-4);
+}
+.partners-cta { margin-top: var(--space-4); }
+@media (max-width: 1024px) {
+  .partners-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 640px) {
+  .partners-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── PARTNER DIRECTORY PAGE ─────────────── */
+.partner-directory {
+  padding: var(--space-7) 0 var(--space-8);
+  background: var(--color-surface-paper);
+}
+.partner-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-border-light);
+}
+.partner-filter-btn {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: 1px solid var(--color-border-light);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.partner-filter-btn:hover,
+.partner-filter-btn.active {
+  background: var(--color-surface-ink);
+  color: var(--color-text-inverse);
+  border-color: var(--color-surface-ink);
+}
+.partner-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--color-border-light);
+  margin-bottom: var(--space-4);
+}
+.partner-card {
+  background: var(--color-surface-paper);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: background 0.2s ease;
+}
+.partner-card:hover { background: var(--color-surface-cream); }
+.partner-card__logo {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.partner-card__logo img {
+  max-height: 44px;
+  max-width: 140px;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+.partner-card:hover .partner-card__logo img { transform: scale(1.04); }
+.partner-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-h4);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+.partner-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.partner-tag {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-brand-blue);
+  border: 1px solid var(--color-brand-blue);
+  padding: 3px 8px;
+}
+.partner-card__desc {
+  font-size: var(--text-body-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--text-body-lh);
+  margin: 0;
+  flex: 1;
+}
+.partner-directory__count {
+  font-size: var(--text-caption);
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+@media (max-width: 1024px) {
+  .partner-cards { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .partner-cards { grid-template-columns: repeat(2, 1fr); }
+  .partner-card { padding: var(--space-4); }
+  .partner-filter { gap: var(--space-1); }
+  .partner-filter-btn { font-size: 0.65rem; padding: 7px 12px; }
 }
 
 /* ── FOOTER ─────────────────────────────── */
