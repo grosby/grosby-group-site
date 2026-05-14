@@ -3,8 +3,8 @@
 
 module.exports = {
   hero: {
-    // Maluma on stage with fireworks — pure LatAm celebrity energy, near-black bg
-    homepage:   "./src/images/uploads/g-maluma.jpg",
+    // Demi Moore at Cannes
+    homepage:   "./src/images/uploads/demi-moore-cannes.jpg",
     // Messi vs Canada, Copa América — editorial stadium action
     publishers: "./src/images/uploads/075_rodriguezcarrilo-conmebol240620_npFO0.jpg",
     // Maluma performing, golden stage lights, packed crowd
