@@ -1118,7 +1118,8 @@ a { color: inherit; text-decoration: none; }
   background: var(--color-surface-paper);
   padding: var(--space-8) 0;
 }
-.feature-section h2 { margin-bottom: var(--space-6); }
+.feature-section h2 { margin-bottom: var(--space-6); text-align: inherit; }
+.feature-section .section-label { text-align: inherit; }
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
