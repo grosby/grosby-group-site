@@ -1,5 +1,12 @@
 module.exports = [
   {
+    slug: 'backgrid',
+    name: 'Backgrid',
+    logo: 'bkg.png',
+    categories: ['Celebrity', 'Entertainment'],
+    description: 'Award-winning paparazzi and celebrity photography agency covering Hollywood and international entertainment.'
+  },
+  {
     slug: 'afp',
     name: 'AFP',
     logo: 'AFP.png',
@@ -7,18 +14,11 @@ module.exports = [
     description: 'The world\'s leading international news agency — 24/7 photo coverage of global events, politics, and sport.'
   },
   {
-    slug: 'mega',
-    name: 'Mega Agency',
-    logo: 'Mega.png',
-    categories: ['Celebrity', 'Entertainment'],
-    description: 'The definitive celebrity paparazzi agency — red carpet, candid, and exclusive portraits of the world\'s biggest names.'
-  },
-  {
-    slug: 'splash',
-    name: 'Splash by Shutterstock',
-    logo: 'Splash_by_Shutterstock.png',
-    categories: ['Celebrity', 'Entertainment'],
-    description: 'Premium celebrity and entertainment photography from events, film sets, and exclusive shoots worldwide.'
+    slug: 'alamy',
+    name: 'Alamy',
+    logo: 'alamy.png',
+    categories: ['Editorial', 'Archive', 'Lifestyle'],
+    description: 'A vast editorial and archive with millions of images spanning news, culture, travel, and lifestyle.'
   },
   {
     slug: 'shutterstock',
@@ -35,32 +35,32 @@ module.exports = [
     description: 'One of Europe\'s largest image archives — decades of sports, news, and entertainment photography across every major territory.'
   },
   {
-    slug: 'alamy',
-    name: 'Alamy',
-    logo: 'alamy.png',
-    categories: ['Editorial', 'Archive', 'Lifestyle'],
-    description: 'A vast editorial and archive with millions of images spanning news, culture, travel, and lifestyle.'
-  },
-  {
-    slug: 'backgrid',
-    name: 'Backgrid',
-    logo: 'bkg.png',
-    categories: ['Celebrity', 'Entertainment'],
-    description: 'Award-winning paparazzi and celebrity photography agency covering Hollywood and international entertainment.'
-  },
-  {
-    slug: 'instar',
-    name: 'Instar Images',
-    logo: 'Instar-new.png',
-    categories: ['Celebrity', 'Entertainment'],
-    description: 'Celebrity and entertainment photography specialists delivering exclusive and candid content from global events.'
-  },
-  {
     slug: 'bestimage',
     name: 'Bestimage',
     logo: 'Bestimage.png',
     categories: ['Celebrity', 'Fashion', 'Entertainment'],
     description: 'France\'s leading celebrity and entertainment agency, with deep coverage of European and international talent.'
+  },
+  {
+    slug: 'zuma',
+    name: 'Zuma Press',
+    logo: 'zuma.png',
+    categories: ['Editorial', 'Sports', 'News'],
+    description: 'Global editorial agency providing real-time sports, news, and entertainment photography to media worldwide.'
+  },
+  {
+    slug: 'picture-alliance',
+    name: 'Picture Alliance',
+    logo: 'Picture-Alliance.png',
+    categories: ['Editorial', 'News', 'Sports'],
+    description: 'Germany\'s leading picture agency — comprehensive news, sports, and feature photography for print and digital media.'
+  },
+  {
+    slug: 'splash',
+    name: 'Splash by Shutterstock',
+    logo: 'Splash_by_Shutterstock.png',
+    categories: ['Celebrity', 'Entertainment'],
+    description: 'Premium celebrity and entertainment photography from events, film sets, and exclusive shoots worldwide.'
   },
   {
     slug: 'sipa',
@@ -77,11 +77,18 @@ module.exports = [
     description: 'Prestigious UK agency renowned for iconic portrait and celebrity photography spanning seven decades of archives.'
   },
   {
-    slug: 'picture-alliance',
-    name: 'Picture Alliance',
-    logo: 'Picture-Alliance.png',
-    categories: ['Editorial', 'News', 'Sports'],
-    description: 'Germany\'s leading picture agency — comprehensive news, sports, and feature photography for print and digital media.'
+    slug: 'mega',
+    name: 'Mega Agency',
+    logo: 'Mega.png',
+    categories: ['Celebrity', 'Entertainment'],
+    description: 'The definitive celebrity paparazzi agency — red carpet, candid, and exclusive portraits of the world\'s biggest names.'
+  },
+  {
+    slug: 'instar',
+    name: 'Instar Images',
+    logo: 'Instar-new.png',
+    categories: ['Celebrity', 'Entertainment'],
+    description: 'Celebrity and entertainment photography specialists delivering exclusive and candid content from global events.'
   },
   {
     slug: 'action-press',
@@ -89,13 +96,6 @@ module.exports = [
     logo: 'Action-Press.png',
     categories: ['Sports', 'Editorial'],
     description: 'German sports and editorial agency delivering high-quality action photography from major sporting events worldwide.'
-  },
-  {
-    slug: 'zuma',
-    name: 'Zuma Press',
-    logo: 'zuma.png',
-    categories: ['Editorial', 'Sports', 'News'],
-    description: 'Global editorial agency providing real-time sports, news, and entertainment photography to media worldwide.'
   },
   {
     slug: 'ddp',
