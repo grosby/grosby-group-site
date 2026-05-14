@@ -61,7 +61,7 @@
   --text-label-ls:     0.12em;
   --text-label-weight: 500;
   --text-label-transform: uppercase;
-  --text-ticker:       clamp(1rem, 2vw, 1.375rem);
+  --text-ticker:       clamp(1.1rem, 2.2vw, 1.5rem);
   --text-ticker-ls:    0.05em;
 
   /* === SPACING === */
