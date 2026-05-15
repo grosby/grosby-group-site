@@ -736,6 +736,17 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto var(--space-4);
 }
 .partners-cta { margin-top: var(--space-4); }
+.partners-network-link {
+  margin-top: var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+}
+.partners-network-link a {
+  color: var(--color-brand-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+.partners-network-link a:hover { text-decoration: underline; }
 @media (max-width: 1024px) {
   .partners-grid { grid-template-columns: repeat(3, 1fr); }
 }
