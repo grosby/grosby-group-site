@@ -1,8 +1,8 @@
 ---
 layout: layouts/base.njk
-title: "Our Global Partner Network — Grosby Group"
-seo_title: "Our Global Partner Network — Grosby Group | 40+ World-Class Photo Agencies"
-seo_description: "Grosby Group represents 40+ of the world's leading photo agencies in Latin America — AFP, Mega, Splash, Imago, Backgrid, Alamy, and more. One access point for the entire network."
+title: "Our Partner Agencies — Grosby Group"
+seo_title: "Our Partner Agencies — Grosby Group"
+seo_description: "Grosby Group represents over 60 of the world's leading photo agencies in Latin America and the US Hispanic market. Browse the full network."
 permalink: /partners/
 lang: en
 ---
@@ -10,101 +10,99 @@ lang: en
 <!-- ─────────────────────────────────────────
      HERO
      ───────────────────────────────────────── -->
-<section class="page-hero" style="min-height: 48vh;">
+<section class="page-hero" style="min-height: 52vh;">
   <div class="page-hero__bg">
-    {% image images.hero.agencies, "Global photo agency network — editorial photography partners", "100vw", "eager" %}
+    {% image images.hero.agencies, "Global photo agency network", "100vw", "eager" %}
   </div>
   <div class="page-hero__overlay"></div>
   <div class="page-hero__content">
     <p class="page-hero__eyebrow">Our Global Network</p>
-    <h1 class="page-hero__headline">40+ WORLD-CLASS AGENCIES. ONE PARTNERSHIP.</h1>
-    <p class="page-hero__body">Grosby Group is the exclusive Latin American licensing partner for the world's most trusted photo agencies. One account gives publishers, creators, and broadcasters across the region access to the entire network.</p>
+    <h1 class="page-hero__headline">THE AGENCIES BEHIND THE ARCHIVE</h1>
   </div>
 </section>
 
 <!-- ─────────────────────────────────────────
-     FILTER BAR
+     CTA STRIP (top)
      ───────────────────────────────────────── -->
-<section class="partner-directory">
+<div class="agency-cta-strip">
+  <p>Are you an agency looking to reach Latino media? <a href="/contact/?type=agency">Get in touch →</a></p>
+</div>
+
+<!-- ─────────────────────────────────────────
+     AGENCY LIST
+     ───────────────────────────────────────── -->
+<section class="agency-list-section">
   <div class="container">
-
-    <div class="partner-filter" role="group" aria-label="Filter by content category">
-      <button class="partner-filter-btn active" data-filter="all">All</button>
-      <button class="partner-filter-btn" data-filter="Celebrity">Celebrity</button>
-      <button class="partner-filter-btn" data-filter="Editorial">Editorial</button>
-      <button class="partner-filter-btn" data-filter="Sports">Sports</button>
-      <button class="partner-filter-btn" data-filter="Fashion">Fashion</button>
-      <button class="partner-filter-btn" data-filter="News">News</button>
-      <button class="partner-filter-btn" data-filter="Food">Food &amp; Lifestyle</button>
-      <button class="partner-filter-btn" data-filter="Archive">Archive</button>
-    </div>
-
-    <!-- ─── PARTNER CARDS GRID ─── -->
-    <div class="partner-cards" id="partnerCards">
-      {% for partner in partners %}
-      <div class="partner-card" data-categories="{{ partner.categories | join(',') }}">
-        <div class="partner-card__logo">
-          <img src="/assets/partners/{{ partner.logo }}" alt="{{ partner.name }}" loading="lazy">
-        </div>
-        <div class="partner-card__body">
-          <h3 class="partner-card__name">{{ partner.name }}</h3>
-          <div class="partner-card__tags">
-            {% for cat in partner.categories %}
-            <span class="partner-tag">{{ cat }}</span>
-            {% endfor %}
-          </div>
-          <p class="partner-card__desc">{{ partner.description }}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
-    <p class="partner-directory__count" id="partnerCount">Showing {{ partners | length }} agencies</p>
-
+    <ul class="agency-list">
+      <li>Ace Pictures</li>
+      <li>Action Press</li>
+      <li>Aflo Japan</li>
+      <li>AFP</li>
+      <li>Alamy</li>
+      <li>All Pix</li>
+      <li>Backgrid</li>
+      <li>Bang Showbiz</li>
+      <li>BNPS</li>
+      <li>Buzz Photo</li>
+      <li>Camera Press</li>
+      <li>Caters News</li>
+      <li>Coleman Rayner</li>
+      <li>Cover Press</li>
+      <li>Crystal Pictures</li>
+      <li>DDP Images</li>
+      <li>DPA Picture Alliance</li>
+      <li>Dutch Press</li>
+      <li>E-Press Photos</li>
+      <li>Exclusive Pix</li>
+      <li>Hollywood Archive</li>
+      <li>I-Images</li>
+      <li>Image Source</li>
+      <li>Imagine China</li>
+      <li>Imago</li>
+      <li>Incognito</li>
+      <li>Instar Images</li>
+      <li>JDS Mexico</li>
+      <li>Kadena Pix</li>
+      <li>KCS Presse</li>
+      <li>Living 4 Media</li>
+      <li>Matrix Pictures</li>
+      <li>Mauritius Images</li>
+      <li>Mavrix Photos</li>
+      <li>Media Drum World</li>
+      <li>Media Punch</li>
+      <li>Mega Agency</li>
+      <li>Most Wanted</li>
+      <li>News Syndication</li>
+      <li>Newscom</li>
+      <li>Pangea News</li>
+      <li>Papix Press</li>
+      <li>Photo Gamma Group</li>
+      <li>Rex/Shutterstock</li>
+      <li>Robert Harding</li>
+      <li>RS Fotos Argentina</li>
+      <li>Season Agency</li>
+      <li>Sipa France</li>
+      <li>Sipa USA</li>
+      <li>Solarpix</li>
+      <li>Solent</li>
+      <li>Splash News</li>
+      <li>Spread Pictures</li>
+      <li>Starmax</li>
+      <li>StockFood</li>
+      <li>Storm Media Group</li>
+      <li>SWNS</li>
+      <li>The Image Direct</li>
+      <li>Vantage News</li>
+      <li>Visual Press Agency</li>
+      <li>X17</li>
+      <li>Zuma Press</li>
+    </ul>
   </div>
 </section>
 
 <!-- ─────────────────────────────────────────
-     CTA — FOR AGENCIES
+     CTA STRIP (bottom)
      ───────────────────────────────────────── -->
-<section class="cta-band">
-  <div class="container--narrow">
-    <p class="cta-band__eyebrow">Are you a photo agency?</p>
-    <h2>JOIN THE NETWORK</h2>
-    <p>If your agency produces editorial photography relevant to Latin American or US Hispanic audiences, we'd like to hear from you. Grosby Group has spent thirty years building the most trusted licensing network in the region.</p>
-    <div class="cta-band__actions">
-      <a href="/agencies/" class="btn-primary">Partnership information →</a>
-      <a href="/contact/?re=agencies" class="btn-ghost">Get in touch</a>
-    </div>
-  </div>
-</section>
-
-<script>
-(function() {
-  var btns  = document.querySelectorAll('.partner-filter-btn');
-  var cards = document.querySelectorAll('.partner-card');
-  var count = document.getElementById('partnerCount');
-  var total = cards.length;
-
-  btns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var filter = this.dataset.filter;
-
-      // Update active state
-      btns.forEach(function(b) { b.classList.remove('active'); });
-      this.classList.add('active');
-
-      // Show/hide cards
-      var visible = 0;
-      cards.forEach(function(card) {
-        var cats = card.dataset.categories;
-        var show = filter === 'all' || cats.indexOf(filter) !== -1;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-      });
-
-      count.textContent = 'Showing ' + visible + ' of ' + total + ' agencies';
-    });
-  });
-})();
-</script>
+<div class="agency-cta-strip">
+  <p>Are you an agency looking to reach Latino media? <a href="/contact/?type=agency">Get in touch →</a></p>
+</div>
