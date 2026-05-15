@@ -370,6 +370,24 @@ a { color: inherit; text-decoration: none; }
   color: rgba(250,250,248,0.9);
   margin-bottom: var(--space-3);
 }
+.hero-display {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 12vw, 11rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--color-text-inverse);
+  line-height: 0.9;
+  margin: 0 0 var(--space-2);
+}
+.hero-h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(250,250,248,0.85);
+  margin: 0 0 var(--space-4);
+  letter-spacing: 0.01em;
+}
 .hero-subhead {
   font-family: var(--font-body);
   font-size: var(--text-body-lg);
@@ -660,6 +678,34 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto var(--space-6);
 }
 
+/* ── DOCUMENTARY & BROADCAST ────────────── */
+.doc-broadcast-section {
+  padding: var(--space-8) 0;
+  background: var(--color-surface-paper);
+}
+.doc-broadcast-section h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.8vw, 4.2rem);
+  color: var(--color-text-primary);
+  margin: var(--space-3) 0 var(--space-3);
+  line-height: 1.0;
+}
+.doc-broadcast-section h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-4);
+  max-width: 680px;
+}
+.doc-broadcast-section p {
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  line-height: var(--text-body-lh, 1.65);
+  max-width: 680px;
+  margin: 0 0 var(--space-5);
+}
+
 /* ── SPLIT SECTIONS ─────────────────────── */
 .split-section {
   display: grid;
@@ -771,6 +817,25 @@ a { color: inherit; text-decoration: none; }
 
 /* ── PARTNER DIRECTORY PAGE ─────────────── */
 /* ── PARTNERS PAGE ──────────────────────── */
+.agency-intro-section {
+  background: var(--color-surface-cream);
+  padding: var(--space-5) 0 0;
+}
+.agency-intro {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.agency-intro a {
+  color: var(--color-brand-blue);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .agency-cta-strip {
   background: var(--color-brand-blue);
   padding: var(--space-4) var(--gutter);

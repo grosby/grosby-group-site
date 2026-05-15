@@ -48,16 +48,12 @@
     "name": "Grosby Group",
     "url": "https://www.grosbygroup.com",
     "logo": "https://www.grosbygroup.com{{ site.logo }}",
-    "description": "Latin America's leading image agency. Thirty years licensing the world's best photography to publishers, broadcasters, and brands.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "hello@grosbygroup.com",
-      "contactType": "Customer Service",
-      "availableLanguage": ["English", "Spanish", "Portuguese"]
-    },
+    "description": "Boutique editorial image licensing and content syndication agency for the Latin American and US Hispanic market. Thirty years of specialist LatAm editorial representation.",
+    "areaServed": ["Latin America", "US Hispanic Market", "Brazil"],
     "sameAs": [
-      "{{ site.social.facebook }}",
-      "{{ site.social.instagram }}"
+      "https://www.youtube.com/@grosbynews",
+      "https://www.instagram.com/grosbynews",
+      "https://www.facebook.com/GrosbyNews"
     ]
   }
   </script>
@@ -72,7 +68,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-GT1MF1TB5R');
+    gtag('config', 'G-GT1MF1TB5R', {
+      linker: { domains: ['archive.grosbygroup.com'] }
+    });
   </script>
 </head>
 <body>
@@ -87,10 +85,9 @@
 
     <div class="nav-right">
       <ul class="nav-links" id="navLinks" role="list">
-        <li><a href="/content/"{% if '/content/' in page.url %} class="active"{% endif %}>Content</a></li>
-        <li><a href="/publishers/"{% if page.url == '/publishers/' %} class="active"{% endif %}>Publishers</a></li>
+        <li><a href="/licensing/"{% if page.url == '/licensing/' %} class="active"{% endif %}>Licensing</a></li>
         <li><a href="/creators/"{% if page.url == '/creators/' %} class="active"{% endif %}>Creators</a></li>
-        <li><a href="/agencies/"{% if page.url == '/agencies/' %} class="active"{% endif %}>Agencies</a></li>
+        <li><a href="/syndication/"{% if page.url == '/syndication/' %} class="active"{% endif %}>Syndication</a></li>
         <li><a href="/about/"{% if page.url == '/about/' %} class="active"{% endif %}>About</a></li>
       </ul>
       <div class="nav-lang-globe" id="langSwitcher">
@@ -140,24 +137,18 @@
       <div class="footer-cols">
         <div class="footer-col">
           <h5>For Publishers</h5>
-          <a href="/publishers/">Overview</a>
-          <a href="/content/">Content Library</a>
-          <a href="/content/celebrity/">Celebrity</a>
-          <a href="/content/sports/">Sports</a>
-          <a href="/content/archive/">Archive</a>
+          <a href="/licensing/">Overview</a>
+          <a href="/partners/">Our Agencies</a>
+          <a href="/contact/?re=publisher">Get in touch</a>
         </div>
         <div class="footer-col">
           <h5>For Creators</h5>
           <a href="/creators/">Overview</a>
-          <a href="/creators/#representation">Representation</a>
-          <a href="/creators/#syndication">Syndication</a>
           <a href="/contact/?re=creators">Get in touch</a>
         </div>
         <div class="footer-col">
           <h5>For Agencies</h5>
-          <a href="/agencies/">Overview</a>
-          <a href="/agencies/#distribution">Distribution</a>
-          <a href="/agencies/#partnership">Partnership</a>
+          <a href="/syndication/">Overview</a>
           <a href="/contact/?re=agencies">Get in touch</a>
         </div>
         <div class="footer-col">
@@ -213,6 +204,38 @@ document.addEventListener('click', function() {
   langBtn.setAttribute('aria-expanded', 'false');
 });
 langDropdown.addEventListener('click', function(e) { e.stopPropagation(); });
+
+// GA4 Custom Events
+document.addEventListener('click', function(e) {
+  var el = e.target.closest('a, button');
+  if (!el) return;
+  var href = el.getAttribute('href') || '';
+  var text = (el.textContent || '').trim();
+
+  // GET ACCESS clicks
+  if (text.match(/get access/i) || el.classList.contains('nav-cta')) {
+    gtag('event', 'cta_get_access', { link_url: href });
+  }
+
+  // Archive links
+  if (href.indexOf('archive.grosbygroup.com') !== -1) {
+    gtag('event', 'archive_link_click', { link_url: href });
+  }
+
+  // Syndication page CTAs
+  if (window.location.pathname === '/syndication/' && el.classList.contains('btn-primary')) {
+    gtag('event', 'cta_syndication', { link_text: text });
+  }
+});
+
+// Contact form submit
+var contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function() {
+    var segment = (document.getElementById('enquiryType') || {}).value || 'unknown';
+    gtag('event', 'contact_form_submit', { form_segment: segment });
+  });
+}
 
 // Fade-up animations — honour prefers-reduced-motion
 if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
