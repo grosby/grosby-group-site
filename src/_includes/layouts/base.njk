@@ -94,11 +94,20 @@
     </ul>
 
     <div class="nav-right">
-      <nav class="nav-lang" aria-label="Language">
-        <a href="/"    class="nav-lang-link{% if not lang or lang == 'en' %} active{% endif %}" hreflang="en"    lang="en"    aria-label="English">EN</a>
-        <a href="/es/" class="nav-lang-link{% if lang == 'es' %} active{% endif %}" hreflang="es-419" lang="es" aria-label="Español">ES</a>
-        <a href="/pt/" class="nav-lang-link{% if lang == 'pt' %} active{% endif %}" hreflang="pt-BR"  lang="pt" aria-label="Português">PT</a>
-      </nav>
+      <div class="nav-lang-globe" id="langSwitcher">
+        <button class="nav-lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+            <path d="M2 12h20"/>
+          </svg>
+        </button>
+        <ul class="nav-lang-dropdown" role="menu">
+          <li role="none"><a href="/"    role="menuitem" hreflang="en"    lang="en"{% if not lang or lang == 'en' %} class="current"{% endif %}>English</a></li>
+          <li role="none"><a href="/es/" role="menuitem" hreflang="es-419" lang="es"{% if lang == 'es' %} class="current"{% endif %}>Español</a></li>
+          <li role="none"><a href="/pt/" role="menuitem" hreflang="pt-BR"  lang="pt"{% if lang == 'pt' %} class="current"{% endif %}>Português</a></li>
+        </ul>
+      </div>
       <a href="{{ site.archiveUrl }}" class="btn-primary nav-cta" target="_blank" rel="noopener noreferrer">Get Access</a>
     </div>
 
@@ -171,14 +180,8 @@
 </footer>
 
 <script>
-// Nav: scroll state
-const nav        = document.getElementById('mainNav');
 const navToggle  = document.getElementById('navToggle');
 const navLinks   = document.getElementById('navLinks');
-
-window.addEventListener('scroll', function() {
-  nav.classList.toggle('scrolled', window.scrollY > 60);
-}, { passive: true });
 
 // Nav: mobile toggle
 navToggle.addEventListener('click', function() {
@@ -196,6 +199,21 @@ navLinks.querySelectorAll('a').forEach(function(link) {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+// Language globe dropdown
+var langSwitcher = document.getElementById('langSwitcher');
+var langBtn      = langSwitcher.querySelector('.nav-lang-btn');
+var langDropdown = langSwitcher.querySelector('.nav-lang-dropdown');
+langBtn.addEventListener('click', function(e) {
+  e.stopPropagation();
+  var open = langSwitcher.classList.toggle('open');
+  langBtn.setAttribute('aria-expanded', String(open));
+});
+document.addEventListener('click', function() {
+  langSwitcher.classList.remove('open');
+  langBtn.setAttribute('aria-expanded', 'false');
+});
+langDropdown.addEventListener('click', function(e) { e.stopPropagation(); });
 
 // Fade-up animations — honour prefers-reduced-motion
 if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {

@@ -181,13 +181,7 @@ a { color: inherit; text-decoration: none; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: transparent;
-  transition: background 0.3s ease, backdrop-filter 0.3s ease;
-}
-.nav.scrolled {
-  background: rgba(10,10,10,0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #0a0a0a;
 }
 .nav-inner {
   max-width: var(--container-max);
@@ -238,32 +232,50 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   gap: var(--space-4);
 }
-.nav-lang {
+.nav-lang-globe {
+  position: relative;
+}
+.nav-lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(250,250,248,0.6);
   display: flex;
   align-items: center;
-  gap: 0;
-}
-.nav-lang-link {
-  font-family: var(--font-body);
-  font-size: var(--text-caption);
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(250,250,248,0.45);
-  line-height: 1;
-  padding: 4px 8px;
+  padding: 4px;
   transition: color 0.2s;
 }
-.nav-lang-link + .nav-lang-link {
-  border-left: 1px solid rgba(250,250,248,0.18);
+.nav-lang-btn:hover { color: #fff; }
+.nav-lang-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #0a0a0a;
+  border: 1px solid rgba(255,255,255,0.12);
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  min-width: 140px;
+  z-index: 200;
 }
-.nav-lang-link.active,
-.nav-lang-link:hover { color: var(--color-text-inverse); }
-.nav-lang-link.active { text-decoration: underline; text-underline-offset: 3px; }
+.nav-lang-globe.open .nav-lang-dropdown { display: block; }
+.nav-lang-dropdown a {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 400;
+  color: rgba(250,250,248,0.7);
+  padding: 9px 16px;
+  letter-spacing: 0.03em;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-lang-dropdown a:hover { background: rgba(255,255,255,0.06); color: #fff; }
+.nav-lang-dropdown a.current { color: #fff; font-weight: 600; }
 
 @media (max-width: 900px) {
   .nav-toggle { display: block; }
-  .nav-lang { display: none; }
+  .nav-lang-globe { display: none; }
   .nav-right { gap: var(--space-2); }
   .nav-links {
     position: fixed;
